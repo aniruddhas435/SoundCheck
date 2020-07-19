@@ -57,7 +57,6 @@ public class SyntaxBuilder {
         transformation.setSyntax(syntax);
         transformation.transform(low, high);
         Set<String> flushSet = transformation.getFlushSet();
-        System.out.println(flushSet);
         syntax = transformation.getSyntax();
         syntax.setDerivations(flusher.flush(syntax.getDerivations(), flushSet));
     }
