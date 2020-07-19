@@ -4,10 +4,11 @@ import com.soundcheck.generated.RaagParser;
 import com.soundcheck.listeners.CheckDerivationsListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-@Component
+@Service
 public class CheckSyntax {
     @Autowired
     private CheckDerivationsListener listener;

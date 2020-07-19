@@ -3,8 +3,9 @@ package com.soundcheck.player.transformers;
 import com.soundcheck.processor.Distribution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class CombinatorToSequenceImp implements CombinatorToSequence {
     @Autowired
     private Distribution<Character> notesDist;

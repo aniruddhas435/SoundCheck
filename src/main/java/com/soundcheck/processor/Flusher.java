@@ -1,10 +1,11 @@
 package com.soundcheck.processor;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Component
+@Service
 public class Flusher {
     public Map<String, Distribution> flush(Map<String, Distribution> derivations, Set<String> flushSet) {
         Map<String, List<Location>> locations = new HashMap<>();

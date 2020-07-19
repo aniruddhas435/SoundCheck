@@ -1,11 +1,12 @@
 package com.soundcheck.player.transformers;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Service
 public class SchemeToSequenceImp implements SchemeToSequence {
 
     @Override

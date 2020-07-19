@@ -1,10 +1,11 @@
 package com.soundcheck.player;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.sound.sampled.*;
 
-@Component
+@Service
 public class Tone {
     public static float SAMPLE_RATE = 20000f;
 

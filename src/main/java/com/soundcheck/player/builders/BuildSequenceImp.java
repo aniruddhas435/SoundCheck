@@ -6,6 +6,7 @@ import com.soundcheck.processor.Distribution;
 import com.soundcheck.syntax.Syntax;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.regex.Pattern;
 
-@Component
+@Service
 public class BuildSequenceImp implements BuildSequence {
 
     @Autowired

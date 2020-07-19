@@ -7,10 +7,11 @@ import com.soundcheck.player.transformers.SchemeToSequence;
 import com.soundcheck.syntax.Syntax;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Component
+@Service
 public class Transformation {
     private Syntax syntax;
     private Set<String> flushSet = new HashSet<>();

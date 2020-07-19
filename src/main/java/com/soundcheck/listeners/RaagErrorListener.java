@@ -2,7 +2,9 @@ package com.soundcheck.listeners;
 import org.antlr.v4.runtime.ConsoleErrorListener;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.Recognizer;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RaagErrorListener extends ConsoleErrorListener {
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line,
