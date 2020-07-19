@@ -1,0 +1,21 @@
+Start -> SaFirst, 1.0 | gaFirst, 1.0 | SaFirst*, 1.0;
+
+SaFirst -> SaPaltaUp-gaFirst, 1.0 | SaPaltaDown-niFirst_, 1.0 | SaPaltaUp-maFirst, 0.5 | SaPaltaDown-dhaFirst_, 0.5;
+SaPaltaUp -> Sa-ga-ma-ma, 1.0 | Sa-ma-ga-ma, 1.0 | Sa-Sa-ga-ma, 1.0 | Sa-ma-ga-Sa, 1.0 | Sa-ga-Sa-ma, 1.0;
+SaPaltaDown -> Sa-ni_-dha_-dha_, 1.0 | Sa-dha_-ni_-dha_, 1.0 | Sa-ga-Sa-ni_, 1.0;
+
+gaFirst -> gaPaltaUp-maFirst, 1.0 | gaPaltaDown-SaFirst, 1.0 | gaPaltaUp-dhaFirst, 0.5 | gaPaltaDown-niFirst_, 0.5;
+gaPaltaUp -> ga-ma-dha-dha, 1.0 | ga-dha-ma-dha, 1.0 | ga-ma-ga-dha, 1.0 | ga-dha-ma-ga, 1.0 | ga-ga-ma-dha, 1.0;
+gaPaltaDown -> ga-Sa-ni_-ni_, 1.0 | ga-ni_-Sa-ni_, 1.0 | ga-ma-ga-Sa, 1.0;
+
+maFirst -> maPaltaDown-gaFirst, 1.0 | maPaltaUp-dhaFirst, 1.0 | maPaltaDown-niFirst, 0.5 | maPaltaUp-SaFirst, 0.5;
+maPaltaUp -> ma-dha-ni-ni, 1.0 | ma-ni-dha-ni, 1.0 | ma-dha-ma-ni, 1.0 | ma-ni-dha-ma, 1.0 | ma-ma-dha-ni, 1.0;
+maPaltaDown -> ma-ga-Sa-Sa, 1.0 | ma-Sa-ga-Sa, 1.0 | ma-dha-ma-ga, 1.0;
+
+dhaFirst -> dhaPaltaUp-niFirst, 1.0 | dhaPaltaDown-maFirst, 1.0 | dhaPaltaUp-SaFirst*, 0.5 | dhaPaltaDown-gaFirst, 0.5;
+dhaPaltaUp -> dha-ni-Sa*-Sa*, 1.0 | dha-Sa*-ni-Sa*, 1.0 | dha-ni-dha-Sa*, 1.0 | dha-Sa*-ni-dha, 1.0 | dha-dha-ni-Sa, 1.0;
+dhaPaltaDown -> dha-ma-ga-ga, 1.0 | dha-ga-ma-ga, 1.0 | dha-ni-dha-ma, 1.0;
+
+niFirst -> niPaltaUp-SaFirst*, 1.0 | niPaltaDown-dhaFirst, 1.0 | niPaltaUp-gaFirst*, 0.5 | niPaltaDown-maFirst, 0.5;
+niPaltaUp -> ni-Sa*-ga*-ga*, 1.0 | ni-ga*-Sa*-ga*, 1.0 | ni-Sa*-ni-ga*, 1.0 | ni-ga*-Sa*-ni, 1.0 | ni-ni-Sa*-ga*, 1.0;
+niPaltaDown -> ni-dha-ma-ma, 1.0 | ni-ma-dha-ma, 1.0 | ni-Sa*-ni-dha, 1.0;
