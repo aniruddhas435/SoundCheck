@@ -1,4 +1,4 @@
-package com.soundcheck.player.transformers;
+package com.soundcheck.player.transformers.comb2seq;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

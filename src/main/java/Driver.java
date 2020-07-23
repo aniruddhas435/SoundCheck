@@ -32,7 +32,7 @@ public class Driver {
 
     public static void main(String[] args) throws LineUnavailableException {
         play(
-                "C:\\Users\\Aniruddha Sarkar\\IdeaProjects\\SoundCheck\\src\\test\\raag_files\\palta_test\\malkauns\\malkauns.raag",
+                "C:\\Users\\Aniruddha Sarkar\\Documents\\github\\SoundCheck\\src\\test\\raag_files\\palta_test\\malkauns\\malkauns.raag",
                 "dha_",
                 "ga*",
                 "first",

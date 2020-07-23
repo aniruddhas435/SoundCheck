@@ -62,12 +62,16 @@ public class BuildSequenceImp implements BuildSequence {
                 String schemeName = parts[0];
                 String swar = parts[1].substring(0, parts[1].length() - 1);
 
-//                String digits = (String) schemes.get(schemeName).sample();
+                String sample = (String) schemes.get(schemeName).sample();
+
                 List<String> notes = digitsToNotes.transform(
-                        (String) schemes.get(schemeName).sample(),
+                        sample,
                         swar, syntax.getAscent(),
                         syntax.getDescent()
                 );
+
+                System.out.println("Palta chosen ==> [scheme: " + sample +
+                        ",  notes: " + notes + "]");
 
                 for(int i = notes.size() - 1; i >= 0; --i) {
                     choices.push(notes.get(i));
