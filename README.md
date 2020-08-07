@@ -92,13 +92,13 @@ niFirst -> paltaUp(ni)-SaFirst*, 1.0
 ```
 
 Now an important feature to look at over here is, **scaling** (as I call it).
-Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the variables for the range we decide upon. That will include a lot of redundancies in coding as we may have to declare in some cases three rules for three seperate octaves. 
+Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the rules for the range we decide upon. That will include a lot of redundancies in coding as we may have to declare in some cases three rules for three seperate octaves. 
 
 But that is not required as we have the feature of **scaling**. Here to mention the next octave or previous octave counterpart of a pre-defined or post-defined rule, we just need to append a "\*" or an "\_" respectively. After using this feature we can mention the notes of the lowest and highest pitch and the syntax will be scaled accordingly, as in the signature defined for initially octave will be replicated without any loss across the mentioned range. 
 
 Though I think it is impotant to mention that this feature does not work the other way round. So if we declare a rule only in the higher octave, with a "\*" appended, we can't expect that to be replicated in the lower octaves according to the mentioned range.
 
-After the scaling happends in the directory of the ".raag" file, a file with ".syntax" extension is produced which contains the scaled version of the whole syntax or _Raag_. An example of the above syntax being scaled is the following.
+After the scaling happens in the directory of the ".raag" file, a file with ".syntax" extension is produced which contains the scaled version of the whole syntax or _Raag_. An example of the above syntax being scaled is the following.
 
 ```
 Start -> SaFirst, 1.0 | gaFirst, 1.0 | SaFirst*, 1.0;
