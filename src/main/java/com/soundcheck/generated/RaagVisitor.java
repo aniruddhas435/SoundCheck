@@ -1,4 +1,4 @@
-// Generated from C:/Users/Aniruddha Sarkar/IdeaProjects/SoundCheck/src/main/resources\Raag.g4 by ANTLR 4.8
+// Generated from C:/Users/Aniruddha Sarkar/Documents/github/SoundCheck/src/main/resources\Raag.g4 by ANTLR 4.8
 package com.soundcheck.generated;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -16,6 +16,84 @@ public interface RaagVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitSyntax(RaagParser.SyntaxContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#declarations}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclarations(RaagParser.DeclarationsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#optionalDeclarations}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOptionalDeclarations(RaagParser.OptionalDeclarationsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#outFileName}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOutFileName(RaagParser.OutFileNameContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#start}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStart(RaagParser.StartContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#baseFreq}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBaseFreq(RaagParser.BaseFreqContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#beatsPerCycle}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBeatsPerCycle(RaagParser.BeatsPerCycleContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#numCycles}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNumCycles(RaagParser.NumCyclesContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#low}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLow(RaagParser.LowContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#high}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitHigh(RaagParser.HighContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#msec}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMsec(RaagParser.MsecContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#volume}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVolume(RaagParser.VolumeContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#playFileName}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPlayFileName(RaagParser.PlayFileNameContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RaagParser#wavFileName}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWavFileName(RaagParser.WavFileNameContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link RaagParser#unit}.
 	 * @param ctx the parse tree

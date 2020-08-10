@@ -1,5 +1,6 @@
 package com.soundcheck.processor;
 
+import com.soundcheck.declarations.Declarations;
 import com.soundcheck.syntax.Syntax;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,11 +32,23 @@ public class SyntaxBuilder {
     @Autowired
     private Syntax syntax;
 
-    public Syntax buildSyntax(String filePath, String low,
-                            String high, String outFileName, String start) {
+    @Autowired
+    private Declarations declarations;
+
+    public Object[] buildSyntax(String filePath) {
         try {
             String content = reader.readFile(filePath);
-            syntax =  parser.parse(content, start);
+            Object[] parsed =  parser.parse(content);
+
+            syntax = (Syntax) parsed[0];
+            declarations = (Declarations) parsed[1];
+
+            System.out.println(declarations);
+
+            String low = declarations.getLow();
+            String high = declarations.getHigh();
+            String outFileName = declarations.getOutFileName();
+            String start = declarations.getStart();
 
             Map<String, Distribution> derivations = syntax.getDerivations();
 
@@ -49,7 +62,7 @@ public class SyntaxBuilder {
             System.exit(-1);
         }
 
-        return syntax;
+        return new Object[]{syntax, declarations};
     }
 
     private void transform(String low, String high) {

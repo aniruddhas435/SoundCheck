@@ -1,5 +1,6 @@
 package com.soundcheck.processor;
 
+import com.soundcheck.declarations.Declarations;
 import com.soundcheck.generated.RaagLexer;
 import com.soundcheck.generated.RaagParser;
 import com.soundcheck.listeners.RaagCustomListener;
@@ -60,7 +61,7 @@ public class Parser {
         return res;
     }
 
-    public Syntax parse(String content, String start) {
+    public Object[] parse(String content) {
         RaagParser parser = createParser(content);
         RaagCustomListener listener = new RaagCustomListener();
         parser.addParseListener(listener);
@@ -70,13 +71,14 @@ public class Parser {
         List<String> descent = listener.getDescent();
         Map<String, Distribution> schemes = listener.getSchemes();
         Map<String, Distribution> derivations = listener.getDerivations();
+        Declarations declarations = listener.getDeclarations();
 
         syntax.setAscent(ascent);
         syntax.setDescent(descent);
         syntax.setSchemes(schemes);
         syntax.setDerivations(derivations);
-        syntax.setStart(start);
+        syntax.setStart(declarations.getStart());
 
-        return syntax;
+        return new Object[]{syntax, declarations};
     }
 }

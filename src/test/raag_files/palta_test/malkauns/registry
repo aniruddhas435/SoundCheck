@@ -1,0 +1,1246 @@
+nullcurrChoice: Start
+pushed to stack: SaFirst*
+stack: [SaFirst*]
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(Sa*)
+stack: [maFirst*, paltaUp(Sa*)]
+
+
+currChoice: paltaUp(Sa*)
+Palta chosen ==> [scheme: (123,4),  notes: [Sa*, ni, dha, dha]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: 3231,  notes: [ma*, ga*, ma*, Sa*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: gaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(ga*)
+stack: [maFirst*, paltaUp(ga*)]
+
+
+currChoice: paltaUp(ga*)
+Palta chosen ==> [scheme: 1232,  notes: [ga*, ma*, dha*, ma*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: 3132,  notes: [ma*, Sa*, ma*, ga*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: SaFirst*
+pushed to stack: paltaDown(ga*)
+stack: [SaFirst*, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: (321,4),  notes: [ga*, ma*, dha*, dha*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: SaFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaUp(Sa*)
+stack: [gaFirst*, paltaUp(Sa*)]
+
+
+currChoice: paltaUp(Sa*)
+Palta chosen ==> [scheme: (123,4),  notes: [Sa*, ma*, Sa*, ga*]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(ga*)
+stack: [maFirst*, paltaUp(ga*)]
+
+
+currChoice: paltaUp(ga*)
+Palta chosen ==> [scheme: 1123,  notes: [ga*, ga*, ma*, dha*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: (321,4),  notes: [ma*, Sa*, ma*, ga*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: SaFirst*
+pushed to stack: paltaDown(ga*)
+stack: [SaFirst*, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: 3132,  notes: [ga*, ni, ga*, Sa*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: SaFirst*
+pushed to stack: niFirst
+pushed to stack: paltaDown(Sa*)
+stack: [niFirst, paltaDown(Sa*)]
+
+
+currChoice: paltaDown(Sa*)
+Palta chosen ==> [scheme: 3132,  notes: [Sa*, dha, Sa*, ni]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: niFirst
+pushed to stack: SaFirst*
+pushed to stack: paltaUp(ni)
+stack: [SaFirst*, paltaUp(ni)]
+
+
+currChoice: paltaUp(ni)
+Palta chosen ==> [scheme: 1232,  notes: [ni, Sa*, ga*, Sa*]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(Sa*)
+stack: [maFirst*, paltaUp(Sa*)]
+
+
+currChoice: paltaUp(Sa*)
+Palta chosen ==> [scheme: (123,4),  notes: [Sa*, ga*, ga*, Sa*]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: 3132,  notes: [ma*, Sa*, ma*, ga*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(ga*)
+stack: [maFirst*, paltaUp(ga*)]
+
+
+currChoice: paltaUp(ga*)
+Palta chosen ==> [scheme: 1123,  notes: [ga*, ga*, ma*, dha*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: 3231,  notes: [ma*, ga*, ma*, Sa*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: gaFirst*
+pushed to stack: niFirst
+pushed to stack: paltaDown(ga*)
+stack: [niFirst, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: (321,4),  notes: [ga*, ni, Sa*, Sa*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: niFirst
+pushed to stack: gaFirst*
+pushed to stack: paltaUp(ni)
+stack: [gaFirst*, paltaUp(ni)]
+
+
+currChoice: paltaUp(ni)
+Palta chosen ==> [scheme: 1232,  notes: [ni, Sa*, ga*, Sa*]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: gaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(ga*)
+stack: [maFirst*, paltaUp(ga*)]
+
+
+currChoice: paltaUp(ga*)
+Palta chosen ==> [scheme: 1123,  notes: [ga*, ga*, ma*, dha*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: (321,4),  notes: [ma*, ni*, dha*, ma*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ni*
+Note added to sequence: ni*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: gaFirst*
+pushed to stack: niFirst
+pushed to stack: paltaDown(ga*)
+stack: [niFirst, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: 3132,  notes: [ga*, ni, ga*, Sa*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: niFirst
+pushed to stack: dhaFirst
+pushed to stack: paltaDown(ni)
+stack: [dhaFirst, paltaDown(ni)]
+
+
+currChoice: paltaDown(ni)
+Palta chosen ==> [scheme: 3132,  notes: [ni, ma, ni, dha]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dhaFirst
+pushed to stack: maFirst
+pushed to stack: paltaDown(dha)
+stack: [maFirst, paltaDown(dha)]
+
+
+currChoice: paltaDown(dha)
+Palta chosen ==> [scheme: 3231,  notes: [dha, ma, dha, ga]]
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst
+pushed to stack: niFirst
+pushed to stack: paltaDown(ma)
+stack: [niFirst, paltaDown(ma)]
+
+
+currChoice: paltaDown(ma)
+Palta chosen ==> [scheme: (321,4),  notes: [ma, Sa, ga, ga]]
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: Sa
+Note added to sequence: Sa
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: niFirst
+pushed to stack: dhaFirst
+pushed to stack: paltaDown(ni)
+stack: [dhaFirst, paltaDown(ni)]
+
+
+currChoice: paltaDown(ni)
+Palta chosen ==> [scheme: 3231,  notes: [ni, dha, ni, ma]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: dhaFirst
+pushed to stack: niFirst
+pushed to stack: paltaUp(dha)
+stack: [niFirst, paltaUp(dha)]
+
+
+currChoice: paltaUp(dha)
+Palta chosen ==> [scheme: 1123,  notes: [dha, dha, ni, Sa*]]
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: niFirst
+pushed to stack: dhaFirst
+pushed to stack: paltaDown(ni)
+stack: [dhaFirst, paltaDown(ni)]
+
+
+currChoice: paltaDown(ni)
+Palta chosen ==> [scheme: (321,4),  notes: [ni, ma, dha, dha]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dhaFirst
+pushed to stack: maFirst
+pushed to stack: paltaDown(dha)
+stack: [maFirst, paltaDown(dha)]
+
+
+currChoice: paltaDown(dha)
+Palta chosen ==> [scheme: 3132,  notes: [dha, ga, dha, ma]]
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: maFirst
+pushed to stack: dhaFirst
+pushed to stack: paltaUp(ma)
+stack: [dhaFirst, paltaUp(ma)]
+
+
+currChoice: paltaUp(ma)
+Palta chosen ==> [scheme: 1232,  notes: [ma, dha, ni, dha]]
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: dhaFirst
+pushed to stack: maFirst
+pushed to stack: paltaDown(dha)
+stack: [maFirst, paltaDown(dha)]
+
+
+currChoice: paltaDown(dha)
+Palta chosen ==> [scheme: 3132,  notes: [dha, ga, dha, ma]]
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: maFirst
+pushed to stack: niFirst
+pushed to stack: paltaDown(ma)
+stack: [niFirst, paltaDown(ma)]
+
+
+currChoice: paltaDown(ma)
+Palta chosen ==> [scheme: 3132,  notes: [ma, Sa, ma, ga]]
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: Sa
+Note added to sequence: Sa
+
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: niFirst
+pushed to stack: gaFirst*
+pushed to stack: paltaUp(ni)
+stack: [gaFirst*, paltaUp(ni)]
+
+
+currChoice: paltaUp(ni)
+Palta chosen ==> [scheme: 1232,  notes: [ni, Sa*, ga*, Sa*]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: gaFirst*
+pushed to stack: SaFirst*
+pushed to stack: paltaDown(ga*)
+stack: [SaFirst*, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: (321,4),  notes: [ga*, dha*, ma*, ga*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: SaFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaUp(Sa*)
+stack: [gaFirst*, paltaUp(Sa*)]
+
+
+currChoice: paltaUp(Sa*)
+Palta chosen ==> [scheme: 1232,  notes: [Sa*, ga*, ma*, ga*]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: maFirst*
+pushed to stack: paltaUp(ga*)
+stack: [maFirst*, paltaUp(ga*)]
+
+
+currChoice: paltaUp(ga*)
+Palta chosen ==> [scheme: (123,4),  notes: [ga*, dha*, ma*, dha*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: dha*
+Note added to sequence: dha*
+
+
+
+currChoice: maFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaDown(ma*)
+stack: [gaFirst*, paltaDown(ma*)]
+
+
+currChoice: paltaDown(ma*)
+Palta chosen ==> [scheme: (321,4),  notes: [ma*, ga*, Sa*, ga*]]
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: SaFirst*
+pushed to stack: paltaDown(ga*)
+stack: [SaFirst*, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: 3132,  notes: [ga*, ni, ga*, Sa*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: SaFirst*
+pushed to stack: gaFirst*
+pushed to stack: paltaUp(Sa*)
+stack: [gaFirst*, paltaUp(Sa*)]
+
+
+currChoice: paltaUp(Sa*)
+Palta chosen ==> [scheme: 1232,  notes: [Sa*, ga*, ma*, ga*]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: gaFirst*
+pushed to stack: SaFirst*
+pushed to stack: paltaDown(ga*)
+stack: [SaFirst*, paltaDown(ga*)]
+
+
+currChoice: paltaDown(ga*)
+Palta chosen ==> [scheme: 3132,  notes: [ga*, ni, ga*, Sa*]]
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: ga*
+Note added to sequence: ga*
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: SaFirst*
+pushed to stack: niFirst
+pushed to stack: paltaDown(Sa*)
+stack: [niFirst, paltaDown(Sa*)]
+
+
+currChoice: paltaDown(Sa*)
+Palta chosen ==> [scheme: 3231,  notes: [Sa*, ni, Sa*, dha]]
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: niFirst
+pushed to stack: SaFirst*
+pushed to stack: paltaUp(ni)
+stack: [SaFirst*, paltaUp(ni)]
+
+
+currChoice: paltaUp(ni)
+Palta chosen ==> [scheme: (123,4),  notes: [ni, dha, Sa*, dha]]
+
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: dha
+Note added to sequence: dha
+
+
+
+seq: [Sa*, ni, dha, dha, ma*, ga*, ma*, Sa*, ga*, ma*, dha*, ma*, ma*, Sa*, ma*, ga*, ga*, ma*, dha*, dha*, Sa*, ma*, Sa*, ga*, ga*, ga*, ma*, dha*, ma*, Sa*, ma*, ga*, ga*, ni, ga*, Sa*, Sa*, dha, Sa*, ni, ni, Sa*, ga*, Sa*, Sa*, ga*, ga*, Sa*, ma*, Sa*, ma*, ga*, ga*, ga*, ma*, dha*, ma*, ga*, ma*, Sa*, ga*, ni, Sa*, Sa*, ni, Sa*, ga*, Sa*, ga*, ga*, ma*, dha*, ma*, ni*, dha*, ma*, ga*, ni, ga*, Sa*, ni, ma, ni, dha, dha, ma, dha, ga, ma, Sa, ga, ga, ni, dha, ni, ma, dha, dha, ni, Sa*, ni, ma, dha, dha, dha, ga, dha, ma, ma, dha, ni, dha, dha, ga, dha, ma, ma, Sa, ma, ga, ni, Sa*, ga*, Sa*, ga*, dha*, ma*, ga*, Sa*, ga*, ma*, ga*, ga*, dha*, ma*, dha*, ma*, ga*, Sa*, ga*, ga*, ni, ga*, Sa*, Sa*, ga*, ma*, ga*, ga*, ni, ga*, Sa*, Sa*, ni, Sa*, dha, ni, dha, Sa*, dha]

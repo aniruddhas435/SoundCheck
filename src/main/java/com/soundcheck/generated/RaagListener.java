@@ -1,4 +1,4 @@
-// Generated from C:/Users/Aniruddha Sarkar/IdeaProjects/SoundCheck/src/main/resources\Raag.g4 by ANTLR 4.8
+// Generated from C:/Users/Aniruddha Sarkar/Documents/github/SoundCheck/src/main/resources\Raag.g4 by ANTLR 4.8
 package com.soundcheck.generated;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -17,6 +17,136 @@ public interface RaagListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitSyntax(RaagParser.SyntaxContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#declarations}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclarations(RaagParser.DeclarationsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#declarations}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclarations(RaagParser.DeclarationsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#optionalDeclarations}.
+	 * @param ctx the parse tree
+	 */
+	void enterOptionalDeclarations(RaagParser.OptionalDeclarationsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#optionalDeclarations}.
+	 * @param ctx the parse tree
+	 */
+	void exitOptionalDeclarations(RaagParser.OptionalDeclarationsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#outFileName}.
+	 * @param ctx the parse tree
+	 */
+	void enterOutFileName(RaagParser.OutFileNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#outFileName}.
+	 * @param ctx the parse tree
+	 */
+	void exitOutFileName(RaagParser.OutFileNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#start}.
+	 * @param ctx the parse tree
+	 */
+	void enterStart(RaagParser.StartContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#start}.
+	 * @param ctx the parse tree
+	 */
+	void exitStart(RaagParser.StartContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#baseFreq}.
+	 * @param ctx the parse tree
+	 */
+	void enterBaseFreq(RaagParser.BaseFreqContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#baseFreq}.
+	 * @param ctx the parse tree
+	 */
+	void exitBaseFreq(RaagParser.BaseFreqContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#beatsPerCycle}.
+	 * @param ctx the parse tree
+	 */
+	void enterBeatsPerCycle(RaagParser.BeatsPerCycleContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#beatsPerCycle}.
+	 * @param ctx the parse tree
+	 */
+	void exitBeatsPerCycle(RaagParser.BeatsPerCycleContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#numCycles}.
+	 * @param ctx the parse tree
+	 */
+	void enterNumCycles(RaagParser.NumCyclesContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#numCycles}.
+	 * @param ctx the parse tree
+	 */
+	void exitNumCycles(RaagParser.NumCyclesContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#low}.
+	 * @param ctx the parse tree
+	 */
+	void enterLow(RaagParser.LowContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#low}.
+	 * @param ctx the parse tree
+	 */
+	void exitLow(RaagParser.LowContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#high}.
+	 * @param ctx the parse tree
+	 */
+	void enterHigh(RaagParser.HighContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#high}.
+	 * @param ctx the parse tree
+	 */
+	void exitHigh(RaagParser.HighContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#msec}.
+	 * @param ctx the parse tree
+	 */
+	void enterMsec(RaagParser.MsecContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#msec}.
+	 * @param ctx the parse tree
+	 */
+	void exitMsec(RaagParser.MsecContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#volume}.
+	 * @param ctx the parse tree
+	 */
+	void enterVolume(RaagParser.VolumeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#volume}.
+	 * @param ctx the parse tree
+	 */
+	void exitVolume(RaagParser.VolumeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#playFileName}.
+	 * @param ctx the parse tree
+	 */
+	void enterPlayFileName(RaagParser.PlayFileNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#playFileName}.
+	 * @param ctx the parse tree
+	 */
+	void exitPlayFileName(RaagParser.PlayFileNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RaagParser#wavFileName}.
+	 * @param ctx the parse tree
+	 */
+	void enterWavFileName(RaagParser.WavFileNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RaagParser#wavFileName}.
+	 * @param ctx the parse tree
+	 */
+	void exitWavFileName(RaagParser.WavFileNameContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link RaagParser#unit}.
 	 * @param ctx the parse tree

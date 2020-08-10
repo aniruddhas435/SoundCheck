@@ -1,9 +1,12 @@
 package com.soundcheck.listeners;
 
+import com.soundcheck.declarations.Declarations;
+import com.soundcheck.player.Sargam;
 import com.soundcheck.processor.Distribution;
 import org.antlr.v4.runtime.Token;
 import com.soundcheck.generated.RaagBaseListener;
 import com.soundcheck.generated.RaagParser;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
@@ -22,6 +25,16 @@ public class RaagCustomListener extends RaagBaseListener {
     private String currSchemeName;
     private String currOption;
 
+    private Declarations declarations = new Declarations();
+
+    public Declarations getDeclarations() {
+        return declarations;
+    }
+
+    public void setDeclarations(Declarations declarations) {
+        this.declarations = declarations;
+    }
+
     public Map<String, Distribution> getDerivations() {
         return derivations;
     }
@@ -36,6 +49,85 @@ public class RaagCustomListener extends RaagBaseListener {
 
     public List<String> getDescent() {
         return descent;
+    }
+
+    @Override
+    public void exitOutFileName(RaagParser.OutFileNameContext ctx) {
+        declarations.setOutFileName(ctx.getText());
+    }
+
+    @Override
+    public void exitStart(RaagParser.StartContext ctx) {
+        declarations.setStart(ctx.getText());
+    }
+
+    @Override
+    public void exitBaseFreq(RaagParser.BaseFreqContext ctx) {
+        declarations.setBaseFrequency(Double.parseDouble(ctx.getText()));
+    }
+
+    @Override
+    public void exitBeatsPerCycle(RaagParser.BeatsPerCycleContext ctx) {
+        declarations.setBeatsPerCycle(Integer.parseInt(ctx.getText()));
+    }
+
+    @Override
+    public void exitNumCycles(RaagParser.NumCyclesContext ctx) {
+        declarations.setNumCycles(Integer.parseInt(ctx.getText()));
+    }
+
+    @Override
+    public void exitLow(RaagParser.LowContext ctx) {
+        String low = ctx.getText();
+
+        if(!Sargam.swar.containsKey(low)) {
+            Token token = ctx.getStart();
+            int line = token.getLine();
+            int charPos = token.getCharPositionInLine();
+            String msg = ctx.getText() + " is not a swar";
+
+            System.err.println("line " + line + ":" + charPos + " " + msg);
+            System.exit(-1);
+        }
+
+        declarations.setLow(low);
+    }
+
+    @Override
+    public void exitHigh(RaagParser.HighContext ctx) {
+        String high = ctx.getText();
+
+        if(!Sargam.swar.containsKey(high)) {
+            Token token = ctx.getStart();
+            int line = token.getLine();
+            int charPos = token.getCharPositionInLine();
+            String msg = ctx.getText() + " is not a swar";
+
+            System.err.println("line " + line + ":" + charPos + " " + msg);
+            System.exit(-1);
+        }
+
+        declarations.setHigh(high);
+    }
+
+    @Override
+    public void exitMsec(RaagParser.MsecContext ctx) {
+        declarations.setMsec(Integer.parseInt(ctx.getText()));
+    }
+
+    @Override
+    public void exitVolume(RaagParser.VolumeContext ctx) {
+        declarations.setVolume(Double.parseDouble(ctx.getText()));
+    }
+
+    @Override
+    public void exitPlayFileName(RaagParser.PlayFileNameContext ctx) {
+        declarations.setPlayFileName(ctx.getText());
+    }
+
+    @Override
+    public void exitWavFileName(RaagParser.WavFileNameContext ctx) {
+        declarations.setWavFileName(ctx.getText());
     }
 
     @Override

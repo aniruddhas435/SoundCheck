@@ -1,3 +1,7 @@
+beatsPerCycle: 16;
+numCycles: 10;
+Range: ma_-ma*;
+
 Start -> SaFirst, 1.0 | gaFirst, 1.0 | SaFirst*, 1.0;
 
 SaFirst -> SaPaltaUp-gaFirst, 1.0 | SaPaltaDown-niFirst_, 1.0 | SaPaltaUp-maFirst, 0.5 | SaPaltaDown-dhaFirst_, 0.5;
