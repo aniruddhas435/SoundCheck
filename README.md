@@ -6,23 +6,38 @@ This project is an effort to sample _Taan_ from a given _Raag_. Now, the meaning
 
 ---
 ## Some terms to look at
-#### Raag
+### Raag
 It is hard to explain what a raag is. Exponents of the Indian classical music tradition have been unanimously of this opinion. Now I here will try to define the subject as interpreted in this project. Here the _Raag_ is interpreted as a hierarchical recursive syntactic structure with musical notes as terminals. A _Raag_ in my view is an infinite set of distinct sequences of notes. And the only way to capture and represent an infinte set is to have a generative structure. So a _Raag_ here is essentially a generative structure.
 
-#### Taan
+### Taan
 A _Taan_ is basically a sequence of notes sampled from a _Raag_ and distributed over a given bit scheme or _Taal_.
 
-#### Arohan and Avarohan
+### Arohan and Avarohan
 Every _Raag_ as an arohan and an avarohan. These are basically the subset of 12 notes that the _Raag_ uses while ascending, _Arohan_ or descending, _Avarohan_. These sometimes may also have have patterns, which is beyond the current scope of this project.
 
-#### Palta
+### Palta
 Now, given the _Arohan_ and _Avarohan_ of a particular _Raag_, we can declare numerical patterns, _Palta_. Now depending on the _Arohan_ and _Avarohan_ these patterns can be applied to specific notes to get respective sequences of notes. We will see how exactly this works.
 
 ---
 ## Describing the scripting language
-Now let's take a more intricate look into the first objective of the project. Now hierarchically speaking the language has two components. An optional **scheme block**, and an optional **rule space**.
+Now let's take a more intricate look into the first objective of the project. Now hierarchically speaking a .raag file should have three components. **Declarations**, An optional **Scheme Block**, an optional **Rule Space**.
 
-#### Scheme Block (Palta)
+### Declarations
+The declarations are a set of parameters that are mentioned to describe some features associated with the processing the _Raag_(syntax) and the subsequent operations related to generation of _Taan_(sequence or string). Some declarations are obligatory and others are optional.
+
+#### list of obligatory declarations include
+- beatsPerCycle (number): This parameter mentions the beat scheme or _Taal_, i.e., the number of beats in one cycle.
+- numCycles (number): This parameter mentions the number of cycles the notes have to be played for.
+- Range (string): This is the parameter used to mention the range for the **scaling** feature.
+
+#### list of optional declarations include
+- outFileName (string): This feature is for the name of the .syntax file. Default value is "final".
+- Start (string): This feature is for mentionaing the root component or rule for the syntax. The default value is "Start".
+- baseFrequency (decimal): This feature is to mention the base frequency while playing. This basically relates to the frequency of the note "Sa". The default value is 360.0.
+- msec (number): This feature is to mention the number of mili-seconds each note will be played for. The default value is 140.
+- volume (decimal \- 0.0 to 1.0): This feature is to mention the volume at which the notes will be played. The default value is 0.2.
+
+### Scheme Block (Palta)
 This is the part where the _Paltas_ are declared.
 At the beginning we declare the _Arohan_ and _Avarohan_ in a block called **sargam (octave)**. And then the series of paltas are declared. The declaration of _Avarohan_ in the sargam block is optional. If it is not declared, it is internally assumed as the reverse of _Arohan_. The following is an example of how a typical scheme block looks like.
 
@@ -56,7 +71,7 @@ The combinator scheme is basically a set of numbers and a sample space, **n**, f
 Now let's look at a practical scenario to explain the working of _Paltas_.
 Lets take the _Palta_, **paltaUp** from the example of malkauns, and let's say, at a particular instant the third option is chosen, which is: [21243432, 1.0]. Now of this _Palta_ is called over the note **ga** in the statement, **paltaUp(ga)**, the sequence produced will be, [ga, Sa, ga, dha, ma, dha, ma, ga].
 
-#### Rule Space (Rules)
+### Rule Space (Rules)
 Now, as hinted earlier, here a _Raag_ is assumed to be a **Context Free Grammar** (though this assumption may change later on) with a particular kind of predicate associated with each rule. These predicates are basically probabilities, which work as hints for the machine during derivation of the rules. The _Raag_ on the other hand is basically an infinite set of sequences notes (or viable notes) that is identified through the **CFG**.
 The rule space always starts with a "Start" symbol or rule. A typical example of a rule space is the following.
 
@@ -92,13 +107,13 @@ niFirst -> paltaUp(ni)-SaFirst*, 1.0
 ```
 
 Now an important feature to look at over here is, **scaling** (as I call it).
-Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the rules for the range we decide upon. That will include a lot of redundancies in coding as we may have to declare in some cases three rules for three seperate octaves. 
+Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the rules for the range we decide upon. That will make necessary a lot of repetative coding as we may have to declare in some cases the same rule for three octaves seperately. 
 
-But that is not required as we have the feature of **scaling**. Here to mention the next octave or previous octave counterpart of a pre-defined or post-defined rule, we just need to append a "\*" or an "\_" respectively. After using this feature we can mention the notes of the lowest and highest pitch and the syntax will be scaled accordingly, as in the signature defined for initially octave will be replicated without any loss across the mentioned range. 
+But that is not required as we have the feature of **scaling**. Here to mention the next octave or previous octave counterpart of a pre-defined or post-defined rule, we just need to append a "\*" or an "\_", respectively, to it. After using this feature we can mention the notes of the lowest and highest pitch in declarations' "range" domain and the syntax will be scaled accordingly, as in the signature defined for initially will be replicated without any loss across the mentioned range. 
 
-Though I think it is impotant to mention that this feature does not work the other way round. So if we declare a rule only in the higher octave, with a "\*" appended, we can't expect that to be replicated in the lower octaves according to the mentioned range.
+Although I think it is impotant to mention that this feature does not work the other way round. So if we declare a rule only in the higher octave, with a "\*" appended, we can't expect that to be replicated in the lower octaves according to the mentioned range.
 
-After the scaling happens in the directory of the ".raag" file, a file with ".syntax" extension is produced which contains the scaled version of the whole syntax or _Raag_. An example of the above syntax being scaled is the following.
+After the scaling happens in the directory of the ".raag" file, a file with ".syntax" extension is produced which contains the scaled version of the whole syntax or _Raag_. An example of the above syntax being scaled, is the following.
 
 ```
 Start -> SaFirst, 1.0 | gaFirst, 1.0 | SaFirst*, 1.0;
@@ -113,5 +128,4 @@ gaFirst* -> paltaUp(ga*)-maFirst*, 1.0 | paltaDown(ga*)-niFirst, 0.5 | paltaDown
 maFirst* -> paltaDown(ma*)-gaFirst*, 1.0 | paltaUp(ma*)-SaFirst*, 0.5;
 niFirst -> paltaUp(ni)-SaFirst*, 1.0 | paltaDown(ni)-dhaFirst, 1.0 | paltaDown(ni)-maFirst, 0.5 | paltaUp(ni)-gaFirst*, 0.5;
 maFirst_ -> paltaUp(ma_)-dhaFirst_, 1.0 | paltaDown(ma_)-niFirst_, 0.5;
-```
 ```
