@@ -31,11 +31,12 @@ The declarations are a set of parameters that are mentioned to describe some fea
 - Range (string): This is the parameter used to mention the range for the **scaling** feature.
 
 #### list of optional declarations include
-- outFileName (string): This feature is for the name of the .syntax file. Default value is "final".
+- outFile (string): This feature is for the name of the .syntax file. Default value is "final".
 - Start (string): This feature is for mentionaing the root component or rule for the syntax. The default value is "Start".
 - baseFrequency (decimal): This feature is to mention the base frequency while playing. This basically relates to the frequency of the note "Sa". The default value is 360.0.
 - msec (number): This feature is to mention the number of mili-seconds each note will be played for. The default value is 140.
 - volume (decimal \- 0.0 to 1.0): This feature is to mention the volume at which the notes will be played. The default value is 0.2.
+- playFile (string): This feature is for the name of the .player file. It records the ongoings inside a player. The default value is "registry".
 
 ### Scheme Block (Palta)
 This is the part where the _Paltas_ are declared.
