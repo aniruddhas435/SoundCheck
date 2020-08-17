@@ -5,6 +5,10 @@ This project is an effort to sample _Taan_ from a given _Raag_. Now, the meaning
 2. Some algorithms have been decided upon to be used for generating _Taan_ for this _Raag_. Though these algorithms will have to be improved to improve the performance and basically has to move toward solving the problem, "What capacities enable human beings to generate _Taan_ for a given _Raag_ ?".
 
 ---
+## How to use it ?
+Now, this is a maven project. And to use this project one has to have a maven build environment installed in the system. Now if that is present download the project, 
+
+---
 ## Some terms to look at
 ### Raag
 It is hard to explain what a raag is. Exponents of the Indian classical music tradition have been unanimously of this opinion. Now I here will try to define the subject as interpreted in this project. Here the _Raag_ is interpreted as a hierarchical recursive syntactic structure with musical notes as terminals. A _Raag_ in my view is an infinite set of distinct sequences of notes. And the only way to capture and represent an infinte set is to have a generative structure. So a _Raag_ here is essentially a generative structure.
