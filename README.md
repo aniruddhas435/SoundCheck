@@ -1,7 +1,7 @@
 ## SoundCheck
-This project is an effort to sample _Taan_ from a given _Raag_. Now, the meanings of the words _Taan_ and _Raag_ in the context of this project are given later on. Here I will just try to describe the content and aim of this project in a nutshell. The content is two-fold.
+This project is an effort to sample _Taan_ from a given _Raag_. Now, the meanings of the words _Taan_ and _Raag_ in the context of this project are given later on. Here I will just try to describe the content and aim of this project in a nutshell. The content is two-folds.
 
-1. A scripting language is defined, using which the user can provide a _Raag_. I will talk about what this exactly means.
+1. A scripting language is defined, using which the user can provide a _Raag_. I will talk about what this exactly means later on.
 2. Some algorithms have been decided upon to be used for generating _Taan_ for this _Raag_. Though these algorithms will have to be improved to improve the performance and basically has to move toward solving the problem, "What capacities enable human beings to generate _Taan_ for a given _Raag_ ?".
 
 ---
@@ -39,9 +39,9 @@ The declarations are a set of parameters that are mentioned to describe some fea
 
 #### list of optional declarations include
 - outFile (string): This feature is for the name of the .syntax file. Default value is "final".
-- Start (string): This feature is for mentionaing the root component or rule for the syntax. The default value is "Start".
+- Start (string): This feature is for mentioning the root component or rule for the syntax. The default value is "Start".
 - baseFrequency (decimal): This feature is to mention the base frequency while playing. This basically relates to the frequency of the note "Sa". The default value is 360.0.
-- msec (number): This feature is to mention the number of mili-seconds each note will be played for. The default value is 140.
+- msec (number): This feature is to mention the number of milli-seconds each note will be played for. The default value is 140.
 - volume (decimal \- 0.0 to 1.0): This feature is to mention the volume at which the notes will be played. The default value is 0.2.
 - playFile (string): This feature is for the name of the .player file. It records the ongoings inside a player. The default value is "registry".
 
@@ -60,7 +60,7 @@ palta {
 }
 ```
 
-Above is the scheme block for a _Raag_ named **Malkauns**. Now Malkauns happens to be a _Raag_ with _Arohan_ and _Avarohan_ having the same set of notes. So they were not seperately mentioned. But for a _Raag_ like **Desh** one would have to mention the _Avarohan_ as well like the following.
+Above is the scheme block for a _Raag_ named **Malkauns**. Now Malkauns happens to be a _Raag_ with _Arohan_ and _Avarohan_ having the same set of notes. So they were not separately mentioned. But for a _Raag_ like **Desh** one would have to mention the _Avarohan_ as well like the following.
 
 ```
 sargam {
@@ -115,11 +115,11 @@ niFirst -> paltaUp(ni)-SaFirst*, 1.0
 ```
 
 Now an important feature to look at over here is, **scaling** (as I call it).
-Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the rules for the range we decide upon. That will make necessary a lot of repetative coding as we may have to declare in some cases the same rule for three octaves seperately. 
+Now, in practical situations, while playing a taan it is quite seldom that the artist restricts the notes within just an octave. So in that manner if we want to declare the syntax of a particular _Raag_ we will have to hard code all the rules for the range we decide upon. That will make necessary a lot of repetitive coding as we may have to declare in some cases the same rule for three octaves seperately. 
 
 But that is not required as we have the feature of **scaling**. Here to mention the next octave or previous octave counterpart of a pre-defined or post-defined rule, we just need to append a "\*" or an "\_", respectively, to it. After using this feature we can mention the notes of the lowest and highest pitch in declarations' "range" domain and the syntax will be scaled accordingly, as in the signature defined for initially will be replicated without any loss across the mentioned range. 
 
-Although I think it is impotant to mention that this feature does not work the other way round. So if we declare a rule only in the higher octave, with a "\*" appended, we can't expect that to be replicated in the lower octaves according to the mentioned range.
+Although I think it is important to mention that this feature does not work the other way round. So if we declare a rule only in the higher octave, with a "\*" appended, we can't expect that to be replicated in the lower octaves according to the mentioned range.
 
 After the scaling happens in the directory of the ".raag" file, a file with ".syntax" extension is produced which contains the scaled version of the whole syntax or _Raag_. An example of the above syntax being scaled, is the following.
 
