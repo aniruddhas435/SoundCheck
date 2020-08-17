@@ -2,13 +2,13 @@
 This project is an effort to sample _Taan_ from a given _Raag_. Now, the meanings of the words _Taan_ and _Raag_ in the context of this project are given later on. Here I will just try to describe the content and aim of this project in a nutshell. The content is two-folds.
 
 1. A scripting language is defined, using which the user can provide a _Raag_. I will talk about what this exactly means later on.
-2. Some algorithms have been decided upon to be used for generating _Taan_ for this _Raag_. Though these algorithms will have to be improved to improve the performance and basically has to move toward solving the problem, "What capacities enable human beings to generate _Taan_ for a given _Raag_ ?".
+2. Some algorithms have been decided upon to be used for generating _Taan_ for this _Raag_. Though, these algorithms will have to be improved to improve the performance and basically has to move toward solving the problem, "What capacities enable human beings to generate _Taan_ for a given _Raag_ ?".
 
 ---
 ## How to use it ?
 Now, this is a maven project. So to use this project one has to have a maven build environment installed in the system. Now if that is present 
-- download the project, create a file in the src/test/raag_files folder with .raag extension and enter the necessary code. 
--  Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
+- download the project, create a file in the src/test/raag_files folder with .raag extension and enter the necessary code (there are examples in the folder, much more one has to know about the syntax of the scripting language). 
+- Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
 - Then run the application to see the performance for yourself.
 
 ---
