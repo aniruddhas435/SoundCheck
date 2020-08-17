@@ -6,7 +6,10 @@ This project is an effort to sample _Taan_ from a given _Raag_. Now, the meaning
 
 ---
 ## How to use it ?
-Now, this is a maven project. And to use this project one has to have a maven build environment installed in the system. Now if that is present download the project, 
+Now, this is a maven project. So to use this project one has to have a maven build environment installed in the system. Now if that is present 
+- download the project, create a file in the src/test/raag_files folder with .raag extension and enter the necessary code. 
+-  Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
+- Then run the application to see the performance for yourself.
 
 ---
 ## Some terms to look at
