@@ -106,18 +106,15 @@ public class Declarations {
 
     @Override
     public String toString() {
-        return "Declarations{" +
-                "beatsPerCycle=" + beatsPerCycle +
-                ", numCycles=" + numCycles +
-                ", low='" + low + '\'' +
-                ", high='" + high + '\'' +
-                ", outFileName='" + outFileName + '\'' +
-                ", start='" + start + '\'' +
-                ", baseFrequency=" + baseFrequency +
-                ", msec=" + msec +
-                ", volume=" + volume +
-                ", playFileName='" + playFileName + '\'' +
-                ", wavFileName='" + wavFileName + '\'' +
-                '}';
+        return "beatsPerCycle: " + beatsPerCycle + ";\n" +
+                "numCycles: " + numCycles + ";\n" +
+                "low: " + low + '\'' + ";\n" +
+                "high: " + high + '\'' + ";\n" +
+                "outFileName: " + outFileName + '\'' + ";\n" +
+                "start: " + start + ";\n" +
+                "baseFrequency: " + baseFrequency + ";\n" +
+                "msec: " + msec + ";\n" +
+                "volume: " + volume + ";\n" +
+                "playFileName: " + playFileName + ";\n";
     }
 }

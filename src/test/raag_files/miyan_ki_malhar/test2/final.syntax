@@ -1,3 +1,13 @@
+beatsPerCycle: 16;
+numCycles: 10;
+low: ma_';
+high: ma*';
+outFileName: final';
+start: Start;
+baseFrequency: 360.0;
+msec: 130;
+volume: 0.2;
+playFileName: ;
 Start -> Uttarang, 1.0 | Purvang, 1.0;
 Uttarang -> maFirst2, 1.0;
 Purvang -> NiFirst_, 1.0;

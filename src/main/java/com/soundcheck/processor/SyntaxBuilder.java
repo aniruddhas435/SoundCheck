@@ -55,7 +55,7 @@ public class SyntaxBuilder {
             checkSyntax.checkBeforeTransformation(content, derivations);
             transform(low, high);
 
-            registerSyntax.register(syntax, outFileName, filePath);
+            registerSyntax.register(syntax, declarations, outFileName, filePath);
             checkSyntax.checkAfterTransformation(syntax.getDerivations(), start);
         } catch (IOException e) {
             e.printStackTrace();
