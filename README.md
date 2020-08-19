@@ -157,5 +157,8 @@ The final aspect of the scripting language is how we denote the musical notes. N
 
 ![](src/main/resources/octave.png)
 
-Now we are allowed to access only three octaves. So there is one whole octave before note "Sa" and one whole after "Ni".
+Now we are allowed to access only three octaves. So there is one whole octave before note "Sa" and one whole after note - "Ni".
 The lower and higher octave counterparts of each note can be accessed in the same way scaling is achieved, by appending an "_" or a "*" to the individual notes.
+The frequency of the note - "Sa" is the baseFrequency. The frequencies of rest of the notes form a geometric progression starting from the frequency of "Sa" with a mean ratio of 2^(1/12). And as the octave contains twelve notes, for any given note, the * of that note is double its frequency while the _ of that note is half. 
+This is how the frequencies of all the notes for all the three octaves are distributed. These notes form the terminals or identifiers of a _Raag_.
+The value of these terminals are determined by the value of the baseFrequency.
