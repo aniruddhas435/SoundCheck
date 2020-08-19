@@ -1,1 +1,5 @@
 /target/
+/target/classes/com/
+/target/classes/META-INF/
+/target/classes/Play.class
+/target/classes/Raag.g4
