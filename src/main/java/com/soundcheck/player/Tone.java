@@ -63,7 +63,7 @@ public class Tone {
 
             for(int j = start; j < start + SAMPLE_RATE / 100 && j < end; ++j) {
                 buffer[j] = (byte)(buffer[j] * (j - start) / (SAMPLE_RATE / 100.0));
-                buffer[end - 1 - i] = (byte)(buffer[end - 1 - i] * (j - start) / (SAMPLE_RATE / 100.0));
+                buffer[end - 1 - j] = (byte)(buffer[end - 1 - j] * (j - start) / (SAMPLE_RATE / 100.0));
             }
 
             start = end;

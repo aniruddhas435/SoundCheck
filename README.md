@@ -155,10 +155,12 @@ maFirst_ -> paltaUp(ma_)-dhaFirst_, 1.0 | paltaDown(ma_)-niFirst_, 0.5;
 ### How do we denote the notes ?
 The final aspect of the scripting language is how we denote the musical notes. Now there are twelve notes in an octave. The following is a notation of each one of them in the ascending order of their frequency.
 
-![](src/main/resources/octave.png)
+![octave](src/main/resources/octave.png)
 
 Now we are allowed to access only three octaves. So there is one whole octave before note "Sa" and one whole after note - "Ni".
 The lower and higher octave counterparts of each note can be accessed in the same way scaling is achieved, by appending an "_" or a "*" to the individual notes.
-The frequency of the note - "Sa" is the baseFrequency. The frequencies of rest of the notes form a geometric progression starting from the frequency of "Sa" with a mean ratio of 2^(1/12). And as the octave contains twelve notes, for any given note, the * of that note is double its frequency while the _ of that note is half. 
-This is how the frequencies of all the notes for all the three octaves are distributed. These notes form the terminals or identifiers of a _Raag_.
+The frequency of the note - "Sa" is the baseFrequency. 
+The frequencies of rest of the notes come form a geometric progression starting from the frequency of "Sa" with a mean ratio of <img src="https://render.githubusercontent.com/render/math?math=2^{ \frac{1}{12}}">. 
+And as the octave contains twelve notes, for any given note, the swar with * appended to that note is double its frequency while the _ appended one is half. 
+This is how the frequencies of all the notes for all the three octaves are resolved. These notes form the terminals or identifiers of a _Raag_.
 The value of these terminals are determined by the value of the baseFrequency.

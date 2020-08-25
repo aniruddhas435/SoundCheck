@@ -1,4 +1,7 @@
+package com.soundcheck;
+
 import com.soundcheck.launcher.Launcher;
+
 import javax.sound.sampled.LineUnavailableException;
 
 public class Play {
