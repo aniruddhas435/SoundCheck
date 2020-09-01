@@ -1,6 +1,8 @@
 beatsPerCycle: 16;
 numCycles: 10;
 Range: ma_-ma*;
+msec: 130;
+playFile: register;
 
 Start -> Purvang, 1.0
        | Uttarang, 1.0;
@@ -13,8 +15,7 @@ NiFirst -> Ni-SaFirst*, 1.0;
 SaFirst -> Sa-maFirst1, 1.0
          | Sa-DhaFirst_, 1.0;
 
-maFirst1 -> ma-ReFirst, 1.0
-          | ma-ma-ReFirst, 0.5;
+maFirst1 -> ma-ReFirst, 1.0;
 maFirst2 -> ma-PaFirst, 1.0;
 maFirst3 -> ma-gaFirst, 1.0;
 
@@ -22,16 +23,20 @@ DhaFirst -> Dha-niFirst2, 1.0
           | Dha-NiFirst, 1.0;
 
 ReFirst -> Re-PaFirst, 1.0
-         | Re-SaFirst, 1.0
-         | Re-Re-PaFirst, 1.0;
+         | Re-SaFirst, 1.0;
 
-PaFirst -> Pa-maFirst2, 1.0
-         | Pa-maFirst3, 1.0
-         | Pa-gaFirst, 1.0
-         | Pa-niFirst1, 1.0
-         | Pa-niFirst2, 1.0;
+PaFirst -> PaFirst1, 1.0
+         | PaFirst2, 1.0;
+
+PaFirst1 -> Pa-maFirst3, 1.0
+          | Pa-gaFirst, 1.0;
+
+PaFirst2 -> Pa-maFirst2, 1.0
+          | Pa-niFirst1, 1.0
+          | Pa-niFirst2, 1.0;
 
 niFirst1 -> ni-DhaFirst, 1.0;
-niFirst2 -> ni-maFirst2, 1.0;
+niFirst2 -> ni-maFirst2, 1.0
+          | ni-Pa-maFirst2, 1.0;
 
 gaFirst -> ga-maFirst1, 1.0;

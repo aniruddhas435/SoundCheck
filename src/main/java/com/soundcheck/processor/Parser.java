@@ -4,6 +4,7 @@ import com.soundcheck.declarations.Declarations;
 import com.soundcheck.generated.RaagLexer;
 import com.soundcheck.generated.RaagParser;
 import com.soundcheck.listeners.RaagCustomListener;
+import com.soundcheck.listeners.RaagErrorListener;
 import com.soundcheck.player.Sargam;
 import com.soundcheck.syntax.Syntax;
 import org.antlr.v4.runtime.CharStreams;
@@ -65,6 +66,8 @@ public class Parser {
         RaagParser parser = createParser(content);
         RaagCustomListener listener = new RaagCustomListener();
         parser.addParseListener(listener);
+        RaagErrorListener errorListener = new RaagErrorListener();
+        parser.addErrorListener(errorListener);
         parser.syntax();
 
         List<String> ascent = listener.getAscent();

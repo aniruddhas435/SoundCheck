@@ -7,7 +7,7 @@ syntax : declarations (unit)*;
 declarations: 'beatsPerCycle:' beatsPerCycle ';'
               'numCycles:' numCycles ';'
               'Range:' low '-' high ';'
-              (optionalDeclarations)?;
+              (optionalDeclarations*)?;
 
 optionalDeclarations: 'OutFile:' outFileName ';'
                     | 'Start:' start ';'

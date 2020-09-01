@@ -22,9 +22,11 @@ public class RegisterSyntax {
         String newFilePath = folderPath + "\\" + fileName + ".syntax";
 
         try {
-            Files.write(Paths.get(newFilePath),
+            Files.write(
+                    Paths.get(newFilePath),
                     str.getBytes(),
-                    StandardOpenOption.CREATE);
+                    StandardOpenOption.CREATE
+            );
         } catch(IOException e) {
             e.printStackTrace();
         }

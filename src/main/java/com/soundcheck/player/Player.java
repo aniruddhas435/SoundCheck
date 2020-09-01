@@ -70,8 +70,9 @@ public class Player extends Sargam {
         List<String> seq = buildSequence.getSequence(syntax, start, numNotes);
         String whatHappens = buildSequence.getWhatHappens();
 
-        byte[] buffer = Tone.sound(seq, msec, vol);
-        System.out.println(buffer.length);
+        Object[] objects = Tone.sound(seq, msec, vol);
+        byte[] buffer = (byte[]) objects[0];
+//        System.out.println(buffer.length);
         if(!playFileName.isEmpty()) registerWhatHappens(whatHappens, filePath + "\\" + playFileName);
         if(!wavFileName.isEmpty()) writeToWAV(buffer, filePath + "\\" + wavFileName + ".wav");
     }

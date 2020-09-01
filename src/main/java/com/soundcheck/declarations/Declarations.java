@@ -108,13 +108,13 @@ public class Declarations {
     public String toString() {
         return "beatsPerCycle: " + beatsPerCycle + ";\n" +
                 "numCycles: " + numCycles + ";\n" +
-                "low: " + low + '\'' + ";\n" +
-                "high: " + high + '\'' + ";\n" +
-                "outFileName: " + outFileName + '\'' + ";\n" +
+                "low: " + low + ";\n" +
+                "high: " + high + ";\n" +
+                "outFileName: " + outFileName + ";\n" +
                 "start: " + start + ";\n" +
                 "baseFrequency: " + baseFrequency + ";\n" +
                 "msec: " + msec + ";\n" +
                 "volume: " + volume + ";\n" +
-                "playFileName: " + playFileName + ";\n";
+                "playFileName: " + playFileName + ";\n\n";
     }
 }
