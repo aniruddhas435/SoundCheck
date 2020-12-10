@@ -1,39 +1,17 @@
 nullcurrChoice: Start
-pushed to stack: Purvang
-stack: [Purvang]
+pushed to stack: Uttarang
+stack: [Uttarang]
 
 
-currChoice: Purvang
-pushed to stack: NiFirst_
-stack: [NiFirst_]
+currChoice: Uttarang
+pushed to stack: maFirst2
+stack: [maFirst2]
 
 
-currChoice: NiFirst_
-pushed to stack: SaFirst
-pushed to stack: Ni_
-stack: [SaFirst, Ni_]
-
-
-currChoice: Ni_
-Note added to sequence: Ni_
-
-
-
-currChoice: SaFirst
-pushed to stack: maFirst1
-pushed to stack: Sa
-stack: [maFirst1, Sa]
-
-
-currChoice: Sa
-Note added to sequence: Sa
-
-
-
-currChoice: maFirst1
-pushed to stack: ReFirst
+currChoice: maFirst2
+pushed to stack: PaFirst
 pushed to stack: ma
-stack: [ReFirst, ma]
+stack: [PaFirst, ma]
 
 
 currChoice: ma
@@ -41,14 +19,74 @@ Note added to sequence: ma
 
 
 
-currChoice: ReFirst
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+stack: [maFirst2, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
 pushed to stack: PaFirst
-pushed to stack: Re
-stack: [PaFirst, Re]
+pushed to stack: ma
+stack: [PaFirst, ma]
 
 
-currChoice: Re
-Note added to sequence: Re
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: niFirst2
+pushed to stack: Pa
+stack: [niFirst2, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: niFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+pushed to stack: ni
+stack: [maFirst2, Pa, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
 
 
 
@@ -107,148 +145,6 @@ stack: [PaFirst2]
 
 
 currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
 pushed to stack: niFirst1
 pushed to stack: Pa
 stack: [niFirst1, Pa]
@@ -267,6 +163,72 @@ stack: [DhaFirst, ni]
 
 currChoice: ni
 Note added to sequence: ni
+
+
+
+currChoice: DhaFirst
+pushed to stack: NiFirst
+pushed to stack: Dha
+stack: [NiFirst, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: NiFirst
+pushed to stack: SaFirst*
+pushed to stack: Ni
+stack: [SaFirst*, Ni]
+
+
+currChoice: Ni
+Note added to sequence: Ni
+
+
+
+currChoice: SaFirst*
+pushed to stack: DhaFirst
+pushed to stack: Sa*
+stack: [DhaFirst, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: DhaFirst
+pushed to stack: NiFirst
+pushed to stack: Dha
+stack: [NiFirst, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: NiFirst
+pushed to stack: SaFirst*
+pushed to stack: Ni
+stack: [SaFirst*, Ni]
+
+
+currChoice: Ni
+Note added to sequence: Ni
+
+
+
+currChoice: SaFirst*
+pushed to stack: DhaFirst
+pushed to stack: Sa*
+stack: [DhaFirst, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
 
 
 
@@ -337,6 +299,33 @@ Note added to sequence: ma
 
 
 currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+stack: [maFirst2, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
 pushed to stack: PaFirst1
 stack: [PaFirst1]
 
@@ -360,55 +349,6 @@ stack: [gaFirst, ma]
 
 currChoice: ma
 Note added to sequence: ma
-
-
-
-currChoice: gaFirst
-pushed to stack: maFirst1
-pushed to stack: ga
-stack: [maFirst1, ga]
-
-
-currChoice: ga
-Note added to sequence: ga
-
-
-
-currChoice: maFirst1
-pushed to stack: ReFirst
-pushed to stack: ma
-stack: [ReFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: ReFirst
-pushed to stack: PaFirst
-pushed to stack: Re
-stack: [PaFirst, Re]
-
-
-currChoice: Re
-Note added to sequence: Re
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst1
-stack: [PaFirst1]
-
-
-currChoice: PaFirst1
-pushed to stack: gaFirst
-pushed to stack: Pa
-stack: [gaFirst, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
 
 
 
@@ -490,9 +430,9 @@ Note added to sequence: Sa
 
 
 currChoice: DhaFirst_
-pushed to stack: niFirst2_
+pushed to stack: NiFirst_
 pushed to stack: Dha_
-stack: [niFirst2_, Dha_]
+stack: [NiFirst_, Dha_]
 
 
 currChoice: Dha_
@@ -500,194 +440,25 @@ Note added to sequence: Dha_
 
 
 
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-pushed to stack: ni_
-stack: [maFirst2_, Pa_, ni_]
+currChoice: NiFirst_
+pushed to stack: SaFirst
+pushed to stack: Ni_
+stack: [SaFirst, Ni_]
 
 
-currChoice: ni_
-Note added to sequence: ni_
+currChoice: Ni_
+Note added to sequence: Ni_
 
 
 
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst2_
-pushed to stack: Pa_
-stack: [niFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-pushed to stack: ni_
-stack: [maFirst2_, Pa_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-stack: [maFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst2_
-pushed to stack: Pa_
-stack: [niFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: ni_
-stack: [maFirst2_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-stack: [maFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst1_
-pushed to stack: Pa_
-stack: [niFirst1_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst1_
+currChoice: SaFirst
 pushed to stack: DhaFirst_
-pushed to stack: ni_
-stack: [DhaFirst_, ni_]
+pushed to stack: Sa
+stack: [DhaFirst_, Sa]
 
 
-currChoice: ni_
-Note added to sequence: ni_
+currChoice: Sa
+Note added to sequence: Sa
 
 
 
@@ -710,279 +481,6 @@ stack: [maFirst2_, ni_]
 
 currChoice: ni_
 Note added to sequence: ni_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-stack: [maFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst2_
-pushed to stack: Pa_
-stack: [niFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-pushed to stack: ni_
-stack: [maFirst2_, Pa_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst2_
-pushed to stack: Pa_
-stack: [niFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: ni_
-stack: [maFirst2_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-stack: [maFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst1_
-pushed to stack: Pa_
-stack: [niFirst1_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst1_
-pushed to stack: DhaFirst_
-pushed to stack: ni_
-stack: [DhaFirst_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: DhaFirst_
-pushed to stack: niFirst2_
-pushed to stack: Dha_
-stack: [niFirst2_, Dha_]
-
-
-currChoice: Dha_
-Note added to sequence: Dha_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-pushed to stack: ni_
-stack: [maFirst2_, Pa_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-stack: [maFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: maFirst2_
-pushed to stack: PaFirst_
-pushed to stack: ma_
-stack: [PaFirst_, ma_]
-
-
-currChoice: ma_
-Note added to sequence: ma_
-
-
-
-currChoice: PaFirst_
-pushed to stack: PaFirst2_
-stack: [PaFirst2_]
-
-
-currChoice: PaFirst2_
-pushed to stack: niFirst2_
-pushed to stack: Pa_
-stack: [niFirst2_, Pa_]
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
-
-
-
-currChoice: niFirst2_
-pushed to stack: maFirst2_
-pushed to stack: Pa_
-pushed to stack: ni_
-stack: [maFirst2_, Pa_, ni_]
-
-
-currChoice: ni_
-Note added to sequence: ni_
-
-
-
-currChoice: Pa_
-Note added to sequence: Pa_
 
 
 
@@ -1047,6 +545,39 @@ Note added to sequence: Ni_
 
 
 currChoice: SaFirst
+pushed to stack: DhaFirst_
+pushed to stack: Sa
+stack: [DhaFirst_, Sa]
+
+
+currChoice: Sa
+Note added to sequence: Sa
+
+
+
+currChoice: DhaFirst_
+pushed to stack: NiFirst_
+pushed to stack: Dha_
+stack: [NiFirst_, Dha_]
+
+
+currChoice: Dha_
+Note added to sequence: Dha_
+
+
+
+currChoice: NiFirst_
+pushed to stack: SaFirst
+pushed to stack: Ni_
+stack: [SaFirst, Ni_]
+
+
+currChoice: Ni_
+Note added to sequence: Ni_
+
+
+
+currChoice: SaFirst
 pushed to stack: maFirst1
 pushed to stack: Sa
 stack: [maFirst1, Sa]
@@ -1080,6 +611,882 @@ Note added to sequence: Re
 
 
 currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: gaFirst
+pushed to stack: Pa
+stack: [gaFirst, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: maFirst3
+pushed to stack: Pa
+stack: [maFirst3, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst3
+pushed to stack: gaFirst
+pushed to stack: ma
+stack: [gaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: niFirst2
+pushed to stack: Pa
+stack: [niFirst2, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: niFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+pushed to stack: ni
+stack: [maFirst2, Pa, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: maFirst3
+pushed to stack: Pa
+stack: [maFirst3, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst3
+pushed to stack: gaFirst
+pushed to stack: ma
+stack: [gaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+stack: [maFirst2, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: niFirst1
+pushed to stack: Pa
+stack: [niFirst1, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: niFirst1
+pushed to stack: DhaFirst
+pushed to stack: ni
+stack: [DhaFirst, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: DhaFirst
+pushed to stack: niFirst2
+pushed to stack: Dha
+stack: [niFirst2, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: niFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+pushed to stack: ni
+stack: [maFirst2, Pa, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: niFirst1
+pushed to stack: Pa
+stack: [niFirst1, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: niFirst1
+pushed to stack: DhaFirst
+pushed to stack: ni
+stack: [DhaFirst, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: DhaFirst
+pushed to stack: niFirst2
+pushed to stack: Dha
+stack: [niFirst2, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: niFirst2
+pushed to stack: maFirst2
+pushed to stack: ni
+stack: [maFirst2, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: gaFirst
+pushed to stack: Pa
+stack: [gaFirst, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst2
+stack: [PaFirst2]
+
+
+currChoice: PaFirst2
+pushed to stack: niFirst1
+pushed to stack: Pa
+stack: [niFirst1, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: niFirst1
+pushed to stack: DhaFirst
+pushed to stack: ni
+stack: [DhaFirst, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: DhaFirst
+pushed to stack: NiFirst
+pushed to stack: Dha
+stack: [NiFirst, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: NiFirst
+pushed to stack: SaFirst*
+pushed to stack: Ni
+stack: [SaFirst*, Ni]
+
+
+currChoice: Ni
+Note added to sequence: Ni
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst1*
+pushed to stack: Sa*
+stack: [maFirst1*, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst1*
+pushed to stack: ReFirst*
+pushed to stack: ma*
+stack: [ReFirst*, ma*]
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ReFirst*
+pushed to stack: SaFirst*
+pushed to stack: Re*
+stack: [SaFirst*, Re*]
+
+
+currChoice: Re*
+Note added to sequence: Re*
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst1*
+pushed to stack: Sa*
+stack: [maFirst1*, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst1*
+pushed to stack: ReFirst*
+pushed to stack: ma*
+stack: [ReFirst*, ma*]
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ReFirst*
+pushed to stack: SaFirst*
+pushed to stack: Re*
+stack: [SaFirst*, Re*]
+
+
+currChoice: Re*
+Note added to sequence: Re*
+
+
+
+currChoice: SaFirst*
+pushed to stack: DhaFirst
+pushed to stack: Sa*
+stack: [DhaFirst, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: DhaFirst
+pushed to stack: NiFirst
+pushed to stack: Dha
+stack: [NiFirst, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: NiFirst
+pushed to stack: SaFirst*
+pushed to stack: Ni
+stack: [SaFirst*, Ni]
+
+
+currChoice: Ni
+Note added to sequence: Ni
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst1*
+pushed to stack: Sa*
+stack: [maFirst1*, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst1*
+pushed to stack: ReFirst*
+pushed to stack: ma*
+stack: [ReFirst*, ma*]
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ReFirst*
+pushed to stack: SaFirst*
+pushed to stack: Re*
+stack: [SaFirst*, Re*]
+
+
+currChoice: Re*
+Note added to sequence: Re*
+
+
+
+currChoice: SaFirst*
+pushed to stack: DhaFirst
+pushed to stack: Sa*
+stack: [DhaFirst, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: DhaFirst
+pushed to stack: NiFirst
+pushed to stack: Dha
+stack: [NiFirst, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: NiFirst
+pushed to stack: SaFirst*
+pushed to stack: Ni
+stack: [SaFirst*, Ni]
+
+
+currChoice: Ni
+Note added to sequence: Ni
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst1*
+pushed to stack: Sa*
+stack: [maFirst1*, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst1*
+pushed to stack: ReFirst*
+pushed to stack: ma*
+stack: [ReFirst*, ma*]
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ReFirst*
+pushed to stack: SaFirst*
+pushed to stack: Re*
+stack: [SaFirst*, Re*]
+
+
+currChoice: Re*
+Note added to sequence: Re*
+
+
+
+currChoice: SaFirst*
+pushed to stack: maFirst1*
+pushed to stack: Sa*
+stack: [maFirst1*, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: maFirst1*
+pushed to stack: ReFirst*
+pushed to stack: ma*
+stack: [ReFirst*, ma*]
+
+
+currChoice: ma*
+Note added to sequence: ma*
+
+
+
+currChoice: ReFirst*
+pushed to stack: SaFirst*
+pushed to stack: Re*
+stack: [SaFirst*, Re*]
+
+
+currChoice: Re*
+Note added to sequence: Re*
+
+
+
+currChoice: SaFirst*
+pushed to stack: DhaFirst
+pushed to stack: Sa*
+stack: [DhaFirst, Sa*]
+
+
+currChoice: Sa*
+Note added to sequence: Sa*
+
+
+
+currChoice: DhaFirst
+pushed to stack: niFirst2
+pushed to stack: Dha
+stack: [niFirst2, Dha]
+
+
+currChoice: Dha
+Note added to sequence: Dha
+
+
+
+currChoice: niFirst2
+pushed to stack: maFirst2
+pushed to stack: Pa
+pushed to stack: ni
+stack: [maFirst2, Pa, ni]
+
+
+currChoice: ni
+Note added to sequence: ni
+
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: maFirst2
+pushed to stack: PaFirst
+pushed to stack: ma
+stack: [PaFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: gaFirst
+pushed to stack: Pa
+stack: [gaFirst, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: SaFirst
+pushed to stack: Re
+stack: [SaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: SaFirst
+pushed to stack: maFirst1
+pushed to stack: Sa
+stack: [maFirst1, Sa]
+
+
+currChoice: Sa
+Note added to sequence: Sa
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
+pushed to stack: PaFirst1
+stack: [PaFirst1]
+
+
+currChoice: PaFirst1
+pushed to stack: gaFirst
+pushed to stack: Pa
+stack: [gaFirst, Pa]
+
+
+currChoice: Pa
+Note added to sequence: Pa
+
+
+
+currChoice: gaFirst
+pushed to stack: maFirst1
+pushed to stack: ga
+stack: [maFirst1, ga]
+
+
+currChoice: ga
+Note added to sequence: ga
+
+
+
+currChoice: maFirst1
+pushed to stack: ReFirst
+pushed to stack: ma
+stack: [ReFirst, ma]
+
+
+currChoice: ma
+Note added to sequence: ma
+
+
+
+currChoice: ReFirst
+pushed to stack: PaFirst
+pushed to stack: Re
+stack: [PaFirst, Re]
+
+
+currChoice: Re
+Note added to sequence: Re
+
+
+
+currChoice: PaFirst
 pushed to stack: PaFirst2
 stack: [PaFirst2]
 
@@ -1145,70 +1552,9 @@ stack: [PaFirst2]
 
 
 currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
 pushed to stack: maFirst2
 pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
+stack: [maFirst2, Pa]
 
 
 currChoice: Pa
@@ -1260,24 +1606,13 @@ stack: [PaFirst1]
 
 
 currChoice: PaFirst1
-pushed to stack: maFirst3
+pushed to stack: gaFirst
 pushed to stack: Pa
-stack: [maFirst3, Pa]
+stack: [gaFirst, Pa]
 
 
 currChoice: Pa
 Note added to sequence: Pa
-
-
-
-currChoice: maFirst3
-pushed to stack: gaFirst
-pushed to stack: ma
-stack: [gaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
 
 
 
@@ -1391,154 +1726,6 @@ Note added to sequence: Re
 
 
 currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: niFirst1
-pushed to stack: Pa
-stack: [niFirst1, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst1
-pushed to stack: DhaFirst
-pushed to stack: ni
-stack: [DhaFirst, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: DhaFirst
-pushed to stack: niFirst2
-pushed to stack: Dha
-stack: [niFirst2, Dha]
-
-
-currChoice: Dha
-Note added to sequence: Dha
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: ni
-stack: [maFirst2, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: niFirst2
-pushed to stack: Pa
-stack: [niFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: niFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-pushed to stack: ni
-stack: [maFirst2, Pa, ni]
-
-
-currChoice: ni
-Note added to sequence: ni
-
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
 pushed to stack: PaFirst1
 stack: [PaFirst1]
 
@@ -1588,9 +1775,9 @@ Note added to sequence: ma
 
 
 currChoice: ReFirst
-pushed to stack: PaFirst
+pushed to stack: SaFirst
 pushed to stack: Re
-stack: [PaFirst, Re]
+stack: [SaFirst, Re]
 
 
 currChoice: Re
@@ -1598,30 +1785,14 @@ Note added to sequence: Re
 
 
 
-currChoice: PaFirst
-pushed to stack: PaFirst1
-stack: [PaFirst1]
-
-
-currChoice: PaFirst1
-pushed to stack: gaFirst
-pushed to stack: Pa
-stack: [gaFirst, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: gaFirst
+currChoice: SaFirst
 pushed to stack: maFirst1
-pushed to stack: ga
-stack: [maFirst1, ga]
+pushed to stack: Sa
+stack: [maFirst1, Sa]
 
 
-currChoice: ga
-Note added to sequence: ga
+currChoice: Sa
+Note added to sequence: Sa
 
 
 
@@ -1637,9 +1808,9 @@ Note added to sequence: ma
 
 
 currChoice: ReFirst
-pushed to stack: PaFirst
+pushed to stack: SaFirst
 pushed to stack: Re
-stack: [PaFirst, Re]
+stack: [SaFirst, Re]
 
 
 currChoice: Re
@@ -1647,68 +1818,14 @@ Note added to sequence: Re
 
 
 
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst1
-stack: [PaFirst1]
-
-
-currChoice: PaFirst1
-pushed to stack: maFirst3
-pushed to stack: Pa
-stack: [maFirst3, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst3
-pushed to stack: gaFirst
-pushed to stack: ma
-stack: [gaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: gaFirst
+currChoice: SaFirst
 pushed to stack: maFirst1
-pushed to stack: ga
-stack: [maFirst1, ga]
+pushed to stack: Sa
+stack: [maFirst1, Sa]
 
 
-currChoice: ga
-Note added to sequence: ga
+currChoice: Sa
+Note added to sequence: Sa
 
 
 
@@ -1724,9 +1841,9 @@ Note added to sequence: ma
 
 
 currChoice: ReFirst
-pushed to stack: PaFirst
+pushed to stack: SaFirst
 pushed to stack: Re
-stack: [PaFirst, Re]
+stack: [SaFirst, Re]
 
 
 currChoice: Re
@@ -1734,188 +1851,26 @@ Note added to sequence: Re
 
 
 
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
+currChoice: SaFirst
+pushed to stack: DhaFirst_
+pushed to stack: Sa
+stack: [DhaFirst_, Sa]
 
 
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
+currChoice: Sa
+Note added to sequence: Sa
 
 
-currChoice: Pa
-Note added to sequence: Pa
 
+currChoice: DhaFirst_
+pushed to stack: niFirst2_
+pushed to stack: Dha_
+stack: [niFirst2_, Dha_]
 
 
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
+currChoice: Dha_
+Note added to sequence: Dha_
 
 
-currChoice: ma
-Note added to sequence: ma
 
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst1
-stack: [PaFirst1]
-
-
-currChoice: PaFirst1
-pushed to stack: maFirst3
-pushed to stack: Pa
-stack: [maFirst3, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst3
-pushed to stack: gaFirst
-pushed to stack: ma
-stack: [gaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: gaFirst
-pushed to stack: maFirst1
-pushed to stack: ga
-stack: [maFirst1, ga]
-
-
-currChoice: ga
-Note added to sequence: ga
-
-
-
-currChoice: maFirst1
-pushed to stack: ReFirst
-pushed to stack: ma
-stack: [ReFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: ReFirst
-pushed to stack: PaFirst
-pushed to stack: Re
-stack: [PaFirst, Re]
-
-
-currChoice: Re
-Note added to sequence: Re
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-currChoice: maFirst2
-pushed to stack: PaFirst
-pushed to stack: ma
-stack: [PaFirst, ma]
-
-
-currChoice: ma
-Note added to sequence: ma
-
-
-
-currChoice: PaFirst
-pushed to stack: PaFirst2
-stack: [PaFirst2]
-
-
-currChoice: PaFirst2
-pushed to stack: maFirst2
-pushed to stack: Pa
-stack: [maFirst2, Pa]
-
-
-currChoice: Pa
-Note added to sequence: Pa
-
-
-
-seq: [Ni_, Sa, ma, Re, Pa, ga, ma, Re, Pa, ni, Pa, ma, Pa, ma, Pa, ni, Pa, ma, Pa, ma, Pa, ni, Dha, Ni, Sa*, Dha, ni, ma, Pa, ma, ga, ma, Re, Pa, ga, ma, Re, Sa, ma, Re, Sa, Dha_, ni_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ni_, Dha_, ni_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ni_, Dha_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ni_, Dha_, Ni_, Sa, ma, Re, Pa, ni, Dha, ni, ma, Pa, ni, Pa, ma, Pa, ni, Pa, ma, Pa, ma, Pa, ma, ga, ma, Re, Pa, ma, Pa, ga, ma, Re, Pa, ni, Pa, ma, Pa, ni, Dha, ni, ma, Pa, ni, Pa, ma, Pa, ma, ga, ma, Re, Pa, ga, ma, Re, Pa, ma, Pa, ma, ga, ma, Re, Pa, ma, Pa, ma, Pa, ma, ga, ma, Re, Pa, ma, Pa, ma, Pa]
+seq: [ma, Pa, ma, Pa, ni, Pa, ma, Pa, ga, ma, Re, Pa, ni, Dha, Ni, Sa*, Dha, Ni, Sa*, Dha, Ni, Sa*, Dha, ni, ma, Pa, ma, Pa, ma, ga, ma, Re, Sa, ma, Re, Sa, Dha_, Ni_, Sa, Dha_, ni_, ma_, Pa_, ni_, Dha_, Ni_, Sa, Dha_, Ni_, Sa, ma, Re, Pa, ga, ma, Re, Pa, ma, ga, ma, Re, Pa, ni, Pa, ma, Pa, ma, ga, ma, Re, Pa, ma, Pa, ni, Dha, ni, Pa, ma, Pa, ni, Dha, ni, ma, Pa, ga, ma, Re, Pa, ni, Dha, Ni, Sa*, ma*, Re*, Sa*, ma*, Re*, Sa*, Dha, Ni, Sa*, ma*, Re*, Sa*, Dha, Ni, Sa*, ma*, Re*, Sa*, ma*, Re*, Sa*, Dha, ni, Pa, ma, Pa, ga, ma, Re, Sa, ma, Re, Pa, ga, ma, Re, Pa, ni, Dha, ni, ma, Pa, ma, Pa, ma, Pa, ga, ma, Re, Pa, ma, Pa, ga, ma, Re, Pa, ma, ga, ma, Re, Sa, ma, Re, Sa, ma, Re, Sa, Dha_]i_, Dha_, Ni_, Sa, ma, Re, Pa, ga, ma, Re, Sa, Dha_, Ni_, Sa, Dha_, ni_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ni_, Dha_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ni_, Pa_] Sa, Dha_, Ni_, Sa, Dha_, Ni_, Sa, ma, Re, Sa, Dha_, Ni_, Sa, Dha_, ni_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Dha_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Dha_, Ni_, Sa, Dha_, Ni_, Sa, ma, Re, Sa, ma, Re, Sa, Dha_, Ni_, Sa, ma, Re, Sa, Dha_, Ni_, Sa, Dha_, Ni_, Sa, ma, Re, Pa, ma, ga, ma, Re, Sa, Dha_, ni_, ma_, Pa_, ni_, Dha_, Ni_, Sa, ma, Re, Pa, ni, ma, Pa, ga, ma, Re, Sa, Dha_, Ni_, Sa, ma, Re, Sa, Dha_, ni_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ni_, Dha_, ni_, Pa_, ma_, Pa_, ni_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ni_, Pa_, ma_, Pa_, ma_, Pa_, ma_, Pa_, ma_, Pa_, ma_, Pa_]
