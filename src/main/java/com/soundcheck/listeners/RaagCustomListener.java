@@ -1,17 +1,15 @@
 package com.soundcheck.listeners;
 
 import com.soundcheck.declarations.Declarations;
+import com.soundcheck.listeners.error.ErrorHandler;
 import com.soundcheck.player.Sargam;
 import com.soundcheck.processor.Distribution;
 import org.antlr.v4.runtime.Token;
 import com.soundcheck.generated.RaagBaseListener;
 import com.soundcheck.generated.RaagParser;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-@Component
 public class RaagCustomListener extends RaagBaseListener {
     private Map<String, Distribution> derivations;
     private Map<String, Distribution> schemes;
@@ -79,34 +77,12 @@ public class RaagCustomListener extends RaagBaseListener {
     @Override
     public void exitLow(RaagParser.LowContext ctx) {
         String low = ctx.getText();
-
-        if(!Sargam.swar.containsKey(low)) {
-            Token token = ctx.getStart();
-            int line = token.getLine();
-            int charPos = token.getCharPositionInLine();
-            String msg = ctx.getText() + " is not a swar";
-
-            System.err.println("line " + line + ":" + charPos + " " + msg);
-            System.exit(-1);
-        }
-
         declarations.setLow(low);
     }
 
     @Override
     public void exitHigh(RaagParser.HighContext ctx) {
         String high = ctx.getText();
-
-        if(!Sargam.swar.containsKey(high)) {
-            Token token = ctx.getStart();
-            int line = token.getLine();
-            int charPos = token.getCharPositionInLine();
-            String msg = ctx.getText() + " is not a swar";
-
-            System.err.println("line " + line + ":" + charPos + " " + msg);
-            System.exit(-1);
-        }
-
         declarations.setHigh(high);
     }
 
@@ -227,14 +203,29 @@ public class RaagCustomListener extends RaagBaseListener {
     @Override
     public void exitSchemeNameCalled(RaagParser.SchemeNameCalledContext ctx) {
         String schemeNameCalled = ctx.getText();
-        if(!schemes.containsKey(schemeNameCalled)) {
-            Token token = ctx.getStart();
-            int line = token.getLine();
-            int charPos = token.getCharPositionInLine();
-            String msg = "palta "  + schemeNameCalled + " is referenced before declaration";
+        Token token = ctx.getStart();
+        int line = token.getLine();
+        int charPos = token.getCharPositionInLine();
+        String msg = "palta "  + schemeNameCalled + " is referenced before declaration";
 
-            System.err.println("line " + line + ":" + charPos + " " + msg);
-            System.exit(-1);
+        if(schemes != null && !schemes.containsKey(schemeNameCalled)) {
+            if(!ErrorHandler.callFromClient) {
+                System.err.println("line " + line + ":" + charPos + " " + msg);
+                System.exit(-1);
+            } else {
+                ErrorHandler.hasErrorOccured = true;
+                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
+            }
+        }
+
+        if(schemes == null) {
+            if(!ErrorHandler.callFromClient) {
+                System.err.println("line " + line + ":" + charPos + " " + msg);
+                System.exit(-1);
+            } else {
+                ErrorHandler.hasErrorOccured = true;
+                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
+            }
         }
     }
 

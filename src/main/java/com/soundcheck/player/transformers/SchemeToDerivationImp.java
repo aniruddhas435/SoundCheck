@@ -1,9 +1,6 @@
 package com.soundcheck.player.transformers;
 
 import com.soundcheck.processor.Distribution;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
@@ -13,9 +10,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
-@Service
 public class SchemeToDerivationImp implements SchemeToDerivation {
-    @Autowired
     DigitsToNotes digitsToNotes;
 
     @Override

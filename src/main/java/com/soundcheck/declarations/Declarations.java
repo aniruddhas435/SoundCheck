@@ -1,8 +1,5 @@
 package com.soundcheck.declarations;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Declarations {
     private int beatsPerCycle;
     private int numCycles;

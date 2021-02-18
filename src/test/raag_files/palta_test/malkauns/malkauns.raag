@@ -7,13 +7,40 @@ palta {
         arohan : Sa, ga, ma, dha, ni;
     }
 
-    paltaUp -> 1 2 3 2, 1.0 | 1 1 2 3, 1.0 | (123, 4), 1.0;
-    paltaDown -> 3 2 3 1, 1.0 | 3 1 3 2, 1.0 | (321, 4), 1.0;
+    paltaUp -> 1 2 3 2, 1.0 
+             | 1 1 2 3, 1.0 
+             | (123, 4), 1.0;
+             
+    paltaDown -> 3 2 3 1, 1.0 
+               | 3 1 3 2, 1.0 
+               | (321, 4), 1.0;
 }
 
-Start -> SaFirst, 1.0 | gaFirst, 1.0 | SaFirst*, 1.0;
-SaFirst -> paltaUp(Sa)-gaFirst, 1.0 | paltaDown(Sa)-niFirst_, 1.0 | paltaUp(Sa)-maFirst, 0.5 | paltaDown(Sa)-dhaFirst_, 0.5;
-gaFirst -> paltaUp(ga)-maFirst, 1.0 | paltaDown(ga)-SaFirst, 1.0 | paltaUp(ga)-dhaFirst, 0.5 | paltaDown(ga)-niFirst_, 0.5;
-maFirst -> paltaDown(ma)-gaFirst, 1.0 | paltaUp(ma)-dhaFirst, 1.0 | paltaDown(ma)-niFirst, 0.5 | paltaUp(ma)-SaFirst, 0.5;
-dhaFirst -> paltaUp(dha)-niFirst, 1.0 | paltaDown(dha)-maFirst, 1.0 | paltaUp(dha)-SaFirst*, 0.5 | paltaDown(dha)-gaFirst, 0.5;
-niFirst -> paltaUp(ni)-SaFirst*, 1.0 | paltaDown(ni)-dhaFirst, 1.0 | paltaUp(ni)-gaFirst*, 0.5 | paltaDown(ni)-maFirst, 0.5;
+Start -> SaFirst, 1.0 
+       | gaFirst, 1.0 
+       | SaFirst*, 1.0;
+
+SaFirst -> paltaUp(Sa)-gaFirst, 1.0 
+         | paltaDown(Sa)-niFirst_, 1.0 
+         | paltaUp(Sa)-maFirst, 0.5 
+         | paltaDown(Sa)-dhaFirst_, 0.5;
+
+gaFirst -> paltaUp(ga)-maFirst, 1.0 
+         | paltaDown(ga)-SaFirst, 1.0 
+         | paltaUp(ga)-dhaFirst, 0.5 
+         | paltaDown(ga)-niFirst_, 0.5;
+
+maFirst -> paltaDown(ma)-gaFirst, 1.0 
+         | paltaUp(ma)-dhaFirst, 1.0 
+         | paltaDown(ma)-niFirst, 0.5 
+         | paltaUp(ma)-SaFirst, 0.5;
+
+dhaFirst -> paltaUp(dha)-niFirst, 1.0 
+          | paltaDown(dha)-maFirst, 1.0 
+          | paltaUp(dha)-SaFirst*, 0.5 
+          | paltaDown(dha)-gaFirst, 0.5;
+
+niFirst -> paltaUp(ni)-SaFirst*, 1.0 
+         | paltaDown(ni)-dhaFirst, 1.0 
+         | paltaUp(ni)-gaFirst*, 0.5 
+         | paltaDown(ni)-maFirst, 0.5;

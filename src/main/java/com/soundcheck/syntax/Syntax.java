@@ -2,12 +2,9 @@ package com.soundcheck.syntax;
 
 import com.soundcheck.processor.Distribution;
 import com.soundcheck.processor.Parser;
-import org.springframework.stereotype.Component;
-
 import java.util.List;
 import java.util.Map;
 
-@Component
 public class Syntax {
     private List<String> ascent;
     private List<String> descent;
@@ -81,7 +78,6 @@ public class Syntax {
             res += "}\n";
         }
 
-        System.out.println(start);
         res += Parser.getStringForSyntax(derivations, start);
 
         return res;

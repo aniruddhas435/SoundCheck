@@ -1,15 +1,14 @@
 package com.soundcheck.listeners;
 
+import com.soundcheck.listeners.error.ErrorHandler;
 import com.soundcheck.processor.Distribution;
 import com.soundcheck.player.Sargam;
 import org.antlr.v4.runtime.Token;
-import org.springframework.stereotype.Component;
 import com.soundcheck.generated.RaagBaseListener;
 import com.soundcheck.generated.RaagParser;
 
 import java.util.Map;
 
-@Component
 public class CheckDerivationsListener extends RaagBaseListener {
     private Map<String, Distribution> derivations;
 
@@ -36,8 +35,13 @@ public class CheckDerivationsListener extends RaagBaseListener {
             int charPos = token.getCharPositionInLine();
             String msg = "variable " + ctx.getText() + " has no derivation";
 
-            System.err.println("line " + line + ":" + charPos + " " + msg);
-            System.exit(-1);
+            if(!ErrorHandler.callFromClient) {
+                System.err.println("line " + line + ":" + charPos + " " + msg);
+                System.exit(-1);
+            } else {
+                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
+                ErrorHandler.hasErrorOccured = true;
+            }
         }
     }
 }

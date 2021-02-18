@@ -1,15 +1,10 @@
 package com.soundcheck.player.transformers.comb2seq;
 
 import com.soundcheck.processor.Distribution;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 
-@Service
-@Qualifier("normal")
 public class CombinatorToSequenceImp implements CombinatorToSequence {
-    @Autowired
-    private Distribution<Character> notesDist;
+
+    private Distribution<Character> notesDist = new Distribution<>();
 
     public Distribution<Character> getNotesDist() {
         return notesDist;

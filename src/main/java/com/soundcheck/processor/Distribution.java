@@ -1,13 +1,9 @@
 package com.soundcheck.processor;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-@Component
 public class Distribution<T> {
     private Map<T, Double> distribution;
     private double distSum;

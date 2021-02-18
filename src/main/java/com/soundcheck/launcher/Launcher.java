@@ -1,29 +1,30 @@
 package com.soundcheck.launcher;
 
-import com.soundcheck.config.SoundCheckConfig;
 import com.soundcheck.declarations.Declarations;
 import com.soundcheck.player.Player;
-import com.soundcheck.processor.Distribution;
 import com.soundcheck.processor.SyntaxBuilder;
 import com.soundcheck.syntax.Syntax;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.sound.sampled.LineUnavailableException;
 import java.io.File;
-import java.util.Map;
 
 public class Launcher {
-    public static void play(String filePath) throws LineUnavailableException {
-        ApplicationContext context = new AnnotationConfigApplicationContext(SoundCheckConfig.class);
-        SyntaxBuilder builder = context.getBean(SyntaxBuilder.class);
+    public static Object[] play(String filePath,
+                                boolean doPlay) throws LineUnavailableException {
+
+        SyntaxBuilder builder = new SyntaxBuilder();
         Object[] objects = builder.buildSyntax(filePath);
 
         Syntax syntax = (Syntax) objects[0];
         Declarations declarations = (Declarations) objects[1];
 
-        String low = declarations.getLow();
-        String high = declarations.getHigh();
+        return play(syntax, declarations, doPlay, filePath);
+    }
+
+    public static Object[] play(Syntax syntax, Declarations declarations,
+                                boolean doPlay, String filePath)
+                                throws LineUnavailableException {
+
         double baseFrequency = declarations.getBaseFrequency();
         int msec = declarations.getMsec();
         double volume = declarations.getVolume();
@@ -33,16 +34,26 @@ public class Launcher {
         String wavFileName = declarations.getWavFileName();
         String start = declarations.getStart();
 
-        Map<String, Distribution> derivations = syntax.getDerivations();
-
-        System.out.println(syntax);
+//        System.out.println("==========================================================================");
+//        System.out.println(syntax.getDerivations());
+//        System.out.println("==========================================================================");
+//        System.out.println(syntax);
+//        System.out.println("==========================================================================");
 
         Player player = new Player(baseFrequency);
-        player.setSyntax(syntax);
-        player.setStart(start);
-        player.setNumNotes(beatsPerCycle, numCycles);
-        player.setBuildFunctionRegisterFile(playFileName);
 
-        player.play(msec, volume, new File(filePath).getParent(), playFileName, wavFileName);
+        if(doPlay) {
+            player.setSyntax(syntax);
+            player.setStart(start);
+            player.setNumNotes(beatsPerCycle, numCycles);
+            player.play(msec, volume, new File(filePath).getParent(),
+                    playFileName, wavFileName);
+            return null;
+        } else {
+            player.setSyntax(syntax);
+            player.setStart(start);
+            player.setNumNotes(beatsPerCycle, numCycles);
+            return player.getSequence();
+        }
     }
 }

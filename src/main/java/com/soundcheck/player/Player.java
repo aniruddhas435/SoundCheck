@@ -1,41 +1,26 @@
 package com.soundcheck.player;
 
-import com.soundcheck.config.SoundCheckConfig;
 import com.soundcheck.player.builders.BuildSequence;
+import com.soundcheck.player.builders.BuildSequenceImp;
 import com.soundcheck.syntax.Syntax;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import javax.sound.sampled.*;
 import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Player extends Sargam {
 
     private Syntax syntax;
     private String start;
     private int numNotes;
-    private ApplicationContext context;
-    private String buildFunctionRegisterFile;
-
-    public String getBuildFunctionRegisterFile() {
-        return buildFunctionRegisterFile;
-    }
-
-    public void setBuildFunctionRegisterFile(String buildFunctionRegisterFile) {
-        this.buildFunctionRegisterFile = buildFunctionRegisterFile;
-    }
 
     public Player(double baseFrequency) {
         super(baseFrequency);
-        context = new AnnotationConfigApplicationContext(SoundCheckConfig.class);
     }
 
     public String getStart() {
@@ -62,19 +47,27 @@ public class Player extends Sargam {
         this.syntax = syntax;
     }
 
-    public void play(int msec, double vol,
+    public List<String> play(int msec, double vol,
                      String filePath, String playFileName,
                      String wavFileName) throws LineUnavailableException {
 
-        BuildSequence buildSequence = context.getBean(BuildSequence.class);
-        List<String> seq = buildSequence.getSequence(syntax, start, numNotes);
-        String whatHappens = buildSequence.getWhatHappens();
+        Object[] objects = getSequence();
+        List<String> seq = (List<String>) objects[0];
+        String whatHappens = (String) objects[1];
 
-        Object[] objects = Tone.sound(seq, msec, vol);
-        byte[] buffer = (byte[]) objects[0];
-//        System.out.println(buffer.length);
-        if(!playFileName.isEmpty()) registerWhatHappens(whatHappens, filePath + "\\" + playFileName);
-        if(!wavFileName.isEmpty()) writeToWAV(buffer, filePath + "\\" + wavFileName + ".wav");
+        Object[] objects1 = Tone.sound(seq, msec, vol);
+        byte[] buffer = (byte[]) objects1[0];
+        if (!playFileName.isEmpty()) registerWhatHappens(whatHappens, filePath + "\\" + playFileName);
+        if (!wavFileName.isEmpty()) writeToWAV(buffer, filePath + "\\" + wavFileName + ".wav");
+
+        return seq;
+    }
+
+    public Object[] getSequence() {
+        BuildSequence buildSequence = new BuildSequenceImp();
+        List<String> sequence = buildSequence.getSequence(syntax, start, numNotes);
+        String whatHappens = buildSequence.getWhatHappens();
+        return new Object[]{sequence, whatHappens};
     }
 
     private void writeToWAV(byte[] buffer, String filePath) {
@@ -100,7 +93,8 @@ public class Player extends Sargam {
             Files.write(
                     Paths.get(playFilePath),
                     whatHappens.getBytes(),
-                    StandardOpenOption.CREATE
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.TRUNCATE_EXISTING
             );
         } catch(IOException e) {
             e.printStackTrace();

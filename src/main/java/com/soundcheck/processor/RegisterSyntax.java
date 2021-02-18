@@ -2,8 +2,6 @@ package com.soundcheck.processor;
 
 import com.soundcheck.declarations.Declarations;
 import com.soundcheck.syntax.Syntax;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +9,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-@Service
 public class RegisterSyntax {
     public String register(Syntax syntax, Declarations declarations,
                            String outFileName, String filePath) {
@@ -25,7 +22,8 @@ public class RegisterSyntax {
             Files.write(
                     Paths.get(newFilePath),
                     str.getBytes(),
-                    StandardOpenOption.CREATE
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.TRUNCATE_EXISTING
             );
         } catch(IOException e) {
             e.printStackTrace();

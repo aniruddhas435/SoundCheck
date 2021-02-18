@@ -1,0 +1,8 @@
+beatsPerCycle: 16;
+numCycles: 10;
+Range: ma_-ma*;
+msec: 130;
+playFile: register;
+
+Start -> Purvang, 1.0
+       | Uttarang, 1.0;

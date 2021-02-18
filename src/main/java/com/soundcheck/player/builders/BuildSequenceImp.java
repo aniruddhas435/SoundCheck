@@ -1,34 +1,22 @@
 package com.soundcheck.player.builders;
 
 import com.soundcheck.logger.CustomLogger;
+import com.soundcheck.logger.CustomLoggerImp;
 import com.soundcheck.player.Sargam;
 import com.soundcheck.player.transformers.DigitsToNotes;
+import com.soundcheck.player.transformers.DigitsToNotesImp;
 import com.soundcheck.processor.Distribution;
 import com.soundcheck.syntax.Syntax;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
-import java.util.regex.Pattern;
 
-@Service
 public class BuildSequenceImp implements BuildSequence {
 
-    @Autowired
-    private DigitsToNotes digitsToNotes;
-
-    @Autowired
-    private CustomLogger logger;
-
+    private DigitsToNotes digitsToNotes = new DigitsToNotesImp();
+    private CustomLogger logger = new CustomLoggerImp();
     private String whatHappens;
 
     @Override
@@ -70,12 +58,12 @@ public class BuildSequenceImp implements BuildSequence {
             }
 
             String currChoice = choices.pop();
-            logger.addLog("currChoice: " + currChoice);
+//            logger.addLog("currChoice: " + currChoice);
             whatHappens += "currChoice: " + currChoice + "\n";
 
             if(Sargam.swar.containsKey(currChoice)) {
                 seq.add(currChoice);
-                logger.addLog("Note added to sequence: " + currChoice);
+//                logger.addLog("Note added to sequence: " + currChoice);
                 whatHappens += "Note added to sequence: " + currChoice + "\n";
                 ++count;
                 whatHappens += "\n\n\n";
@@ -101,8 +89,8 @@ public class BuildSequenceImp implements BuildSequence {
                 whatHappens += "Palta chosen ==> [scheme: " + sample +
                         ",  notes: " + notes + "]" + "\n";
 
-                logger.addLog("Palta chosen ==> [scheme: " + sample +
-                        ",  notes: " + notes + "]");
+//                logger.addLog("Palta chosen ==> [scheme: " + sample +
+//                        ",  notes: " + notes + "]");
 
                 for(int i = notes.size() - 1; i >= 0; --i) {
                     choices.push(notes.get(i));
@@ -119,11 +107,11 @@ public class BuildSequenceImp implements BuildSequence {
 
             for(int i = ids.length - 1; i >= 0; i--) {
                 choices.push(ids[i]);
-                logger.addLog("pushed to stack: " + ids[i]);
+//                logger.addLog("pushed to stack: " + ids[i]);
                 whatHappens += "pushed to stack: " + ids[i] + "\n";
             }
 
-            logger.addLog("stack: " + choices);
+//            logger.addLog("stack: " + choices);
             whatHappens += "stack: " + choices + "\n";
             whatHappens += "\n\n";
         }

@@ -1,20 +1,16 @@
 package com.soundcheck.processor;
 
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-
 import java.util.*;
 
-@Service
 public class Flusher {
     public Map<String, Distribution> flush(Map<String, Distribution> derivations, Set<String> flushSet) {
-        Map<String, List<Location>> locations = new HashMap<>();
+        Map<String, List<Object[]>> locations = new HashMap<>();
         for(String var: derivations.keySet()) {
             Distribution<String> dist = derivations.get(var);
             for(String der: dist.getValues()) {
                 for(String id: der.split("-")) {
                     if(derivations.containsKey(id) || flushSet.contains(id)) {
-                        locations.computeIfAbsent(id, k -> new ArrayList<>()).add(new Location(var, der));
+                        locations.computeIfAbsent(id, k -> new ArrayList<>()).add(new Object[]{var, der});
                     }
                 }
             }
@@ -27,16 +23,18 @@ public class Flusher {
 
         while(!queue.isEmpty()) {
             String var = queue.remove();
-            List<Location> locs = locations.get(var);
-            for(Location location: locs) {
+            List<Object[]> locs = locations.get(var);
+            for(Object[] location: locs) {
+                String variable = (String) location[0];
+                String derivation = (String) location[1];
                 try {
-                    derivations.get(location.variable).remove(location.derivation);
+                    derivations.get(variable).remove(derivation);
                 } catch(NullPointerException e) {
                     continue;
                 }
-                if(derivations.get(location.variable).isEmpty()) {
-                    queue.add(location.variable);
-                    flushSet.add(location.variable);
+                if(derivations.get(variable).isEmpty()) {
+                    queue.add(variable);
+                    flushSet.add(variable);
                 }
             }
         }

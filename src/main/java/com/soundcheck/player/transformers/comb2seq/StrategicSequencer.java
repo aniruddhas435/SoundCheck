@@ -1,8 +1,6 @@
 package com.soundcheck.player.transformers.comb2seq;
 
 import com.soundcheck.processor.Distribution;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,8 +8,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-@Service
-@Qualifier("strategic")
 public class StrategicSequencer implements CombinatorToSequence {
     @Override
     public String getSimpleSchemeFromCombinator(String noteString, int sampleSize) {

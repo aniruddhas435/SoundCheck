@@ -28,12 +28,5 @@
             <artifactId>antlr4</artifactId>
             <version>4.8</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.2.5.RELEASE</version>
-        </dependency>
     </dependencies>
 </project>

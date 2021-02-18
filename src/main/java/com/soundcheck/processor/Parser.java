@@ -9,17 +9,12 @@ import com.soundcheck.player.Sargam;
 import com.soundcheck.syntax.Syntax;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
 public class Parser {
 
-    @Autowired
-    private Syntax syntax;
+    private Syntax syntax = new Syntax();
 
     public Syntax getSyntax() {
         return syntax;
@@ -36,6 +31,16 @@ public class Parser {
         return parser;
     }
 
+    public static String getStringForSyntax(Map<String, Distribution> derivations) {
+        String res = "";
+
+        for(Map.Entry<String, Distribution> entry: derivations.entrySet()) {
+            res += entry.getKey() + " -> " + entry.getValue().toString() + ";\n";
+        }
+
+        return res;
+    }
+
     public static String getStringForSyntax(Map<String, Distribution> derivations, String start) {
         String res = "";
         Queue<String> queue = new LinkedList<>();
@@ -45,10 +50,12 @@ public class Parser {
 
         while(!queue.isEmpty()) {
             String variable = queue.remove();
+            if(!derivations.containsKey(variable)) {
+                continue;
+            }
             Distribution<String> distribution = derivations.get(variable);
             String expression = variable + " -> " + distribution;
             res += expression + ";\n";
-
             for(String derivation: distribution.getValues()) {
                 for(String str: derivation.split("-")) {
                     if(!Sargam.swar.containsKey(str) && !visited.contains(str) && !str.contains("(")) {

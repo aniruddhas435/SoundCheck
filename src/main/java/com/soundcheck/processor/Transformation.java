@@ -2,23 +2,17 @@ package com.soundcheck.processor;
 
 import com.soundcheck.player.Sargam;
 import com.soundcheck.player.transformers.DigitsToNotes;
-import com.soundcheck.player.transformers.SchemeToDerivation;
-import com.soundcheck.player.transformers.SchemeToSequence;
+import com.soundcheck.player.transformers.DigitsToNotesImp;
 import com.soundcheck.syntax.Syntax;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-@Service
 public class Transformation {
     private Syntax syntax;
     private Set<String> flushSet = new HashSet<>();
     private Map<String, Boolean> schemeInRange = new HashMap<>();
 
-    @Autowired
-    private DigitsToNotes digitsToNotes;
+    private DigitsToNotes digitsToNotes = new DigitsToNotesImp();
 
     public Syntax getSyntax() {
         return syntax;
@@ -163,11 +157,10 @@ public class Transformation {
             }
         }
 
-        queue.add(newDist);
-
         if(newDist.isEmpty()) {
             flushSet.add(newVar);
         } else {
+            queue.add(newDist);
             derivations.put(newVar, newDist);
         }
 

@@ -1,19 +1,13 @@
 package com.soundcheck.player.transformers;
 
 import com.soundcheck.player.transformers.comb2seq.CombinatorToSequence;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
+import com.soundcheck.player.transformers.comb2seq.CombinatorToSequenceImp;
 
 import java.util.List;
 
-@Service
 public class DigitsToNotesImp implements DigitsToNotes {
-    @Autowired
-    private SchemeToSequence schemeToSequence;
-    @Autowired
-    @Qualifier("normal")
-    private CombinatorToSequence combinatorToSequence;
+    private SchemeToSequence schemeToSequence = new SchemeToSequenceImp();
+    private CombinatorToSequence combinatorToSequence = new CombinatorToSequenceImp();
 
     public SchemeToSequence getSchemeToSequence() {
         return schemeToSequence;

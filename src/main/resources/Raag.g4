@@ -22,8 +22,8 @@ start: VARNAME;
 baseFreq: FLOAT;
 beatsPerCycle: (DIGIT)+;
 numCycles: (DIGIT)+;
-low: VARNAME;
-high: VARNAME;
+low: swar;
+high: swar;
 msec: (DIGIT)+;
 volume: FLOAT;
 playFileName: VARNAME;
@@ -39,7 +39,7 @@ expression : combinator ',' probability
            | sequence ',' probability;
 
 combinator : '(' option ('-' option)* ',' DIGIT ')';
-sequence : option ('-' option)*; //like: Sa-Re-ma-ma or SaFirst-gaFirst-ni or
+sequence : option ('-' option)*; //like: Sa-Re-ma-ma or SaFirst-gaFirst-ni
 
 option : VARNAME
        | swar
@@ -73,7 +73,9 @@ schemeOption : combinatorScheme
 combinatorScheme : '(' DIGIT+ ',' DIGIT ')';
 simpleScheme : DIGIT+;
 
-swar : ('Sa' | 'Re' | 're' | 'Ga' | 'ga' | 'Ma' | 'ma' | 'Pa' | 'Dha' | 'dha' | 'Ni' | 'ni')('*' | '_')?;
+swar : 'Sa' | 'Re' | 're' | 'Ga' | 'ga' | 'Ma' | 'ma' | 'Pa' | 'Dha' | 'dha' | 'Ni' | 'ni'
+       | 'Sa_' | 'Re_' | 're_' | 'Ga_' | 'ga_' | 'Ma_' | 'ma_' | 'Pa_' | 'Dha_' | 'dha_' | 'Ni_' | 'ni_'
+       | 'Sa*' | 'Re*' | 're*' | 'Ga*' | 'ga*' | 'Ma*' | 'ma*' | 'Pa*' | 'Dha*' | 'dha*' | 'Ni*' | 'ni*';
 
 
 
