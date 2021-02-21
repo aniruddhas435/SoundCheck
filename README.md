@@ -11,9 +11,6 @@ Now, this is a maven project. So to use this project one has to have a maven bui
 - Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
 - Then run the application to see the performance for yourself.
 
-Get the commandline application [![here](https://jitpack.io/v/aniruddhas435/SoundCheck.svg)](https://jitpack.io/#aniruddhas435/SoundCheck)
-
-
 ---
 ## Some terms to look at
 ### Raag
