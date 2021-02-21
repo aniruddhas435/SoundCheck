@@ -88,7 +88,13 @@ public class RaagCustomListener extends RaagBaseListener {
 
     @Override
     public void exitMsec(RaagParser.MsecContext ctx) {
-        declarations.setMsec(Integer.parseInt(ctx.getText()));
+        try {
+            declarations.setMsec(Integer.parseInt(ctx.getText()));
+        } catch(NumberFormatException e) {
+            if(ErrorHandler.callFromClient) {
+                ErrorHandler.hasErrorOccured = true;
+            }
+        }
     }
 
     @Override

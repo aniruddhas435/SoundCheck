@@ -72,9 +72,9 @@ public class Parser {
     public Object[] parse(String content) {
         RaagParser parser = createParser(content);
         RaagCustomListener listener = new RaagCustomListener();
-        parser.addParseListener(listener);
         RaagErrorListener errorListener = new RaagErrorListener();
         parser.addErrorListener(errorListener);
+        parser.addParseListener(listener);
         parser.syntax();
 
         List<String> ascent = listener.getAscent();

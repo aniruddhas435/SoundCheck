@@ -29,4 +29,12 @@
             <version>4.8</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>sound-check</id>
+            <name>SoundCheck</name>
+            <url>https://maven.pkg.github.com/aniruddhas435/SoundCheck</url>
+        </repository>
+    </distributionManagement>
 </project>
