@@ -53,10 +53,22 @@ public class SyntaxBuilder {
 
         Map<String, Distribution> derivations = syntax.getDerivations();
 
+        if(!derivations.containsKey(start)) {
+            String errMsg = "mentioned start symbol - \"start: " + start + "\" does not have a rule";
+            if(ErrorHandler.callFromClient) {
+                ErrorHandler.hasErrorOccured = true;
+                ErrorHandler.messages += "\n" + errMsg;
+                return new Object[]{};
+            } else {
+                System.err.println(errMsg);
+                System.exit(-1);
+            }
+        }
+
         checkSyntax.check(content, derivations);
         transform(low, high);
 
-        System.out.println(Parser.getStringForSyntax(syntax.getDerivations()));
+        System.out.println(Parser.getStringForSyntax(syntax.getDerivations(), start));
         System.out.println("=======================================================================================================");
 
         if(ErrorHandler.hasErrorOccured) {

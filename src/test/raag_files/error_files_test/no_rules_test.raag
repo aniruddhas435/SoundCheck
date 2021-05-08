@@ -1,0 +1,5 @@
+beatsPerCycle: 16;
+numCycles: 10;
+Range: ma_-ma*;
+msec: 140;
+playFile: register;

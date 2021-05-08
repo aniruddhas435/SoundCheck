@@ -1,0 +1,11 @@
+beatsPerCycle: 16;
+numCycles: 10;
+low: ma_;
+high: ma*;
+outFileName: final;
+start: Start;
+baseFrequency: 360.0;
+msec: 140;
+volume: 0.2;
+playFileName: register;
+
