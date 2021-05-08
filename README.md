@@ -6,11 +6,10 @@ This project is an effort to sample _Taan_ from a given _Raag_. Now, the meaning
 
 ---
 ## How to use it ?
-Now, this is a maven project. So to use this project one has to have a maven build environment installed in the system. Now if that is present 
-- download the project, create a file in the src/test/raag_files folder with .raag extension and enter the necessary code (there are examples in the folder, much more of what one has to know about the syntax of the scripting language is given below). 
-- Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
-- Then run the application to see the performance for yourself.
-
+You will have to have java (jdk 1.8) installed in your machine. If you have this, download the release - SoundCheck.jar. Then go into the folder where you have saved the SoundCheck.jar file and open a .raag file, enter the raag (alternatively you can also copy from some of the examples you will find in the 'src/test/raag_files'), the go into the command prompt and run the following command.
+```
+java -jar SoundCheck.jar <fileName>
+```
 ---
 ## Some terms to look at
 ### Raag
