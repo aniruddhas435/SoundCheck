@@ -1,20 +1,21 @@
 ## SoundCheck
-This project is an effort to sample _Taan_ from a given _Raag_. Now, the meanings of the words _Taan_ and _Raag_ in the context of this project are given later on. Here I will just try to describe the content and aim of this project in a nutshell. The content is two-folds.
+If we want to look at SoundCheck with a relatively broad perspective what we can see is - It is software that samples sequences of symbols from a given Context Free Grammar (CFG). Now any CFG can be defined as a collection of terminals and non-terminal symbols. The sequences that are going to be sampled are going to be of these terminals which in our class of CFGs are going to be musical notes.
+
+This project is an effort to sample _Taan_ (sequence of musical notes distributed over a given beat-scheme) from a given _Raag_ (a CFG). Now, the meanings of the words _Taan_ and _Raag_ in the context of this project are more nuanced that this and have been explained on. Here I will just try to describe the content and aim of this project in a nutshell. The content is two-folds.
 
 1. A scripting language is defined, using which the user can provide a _Raag_. I will talk about what this exactly means later on.
 2. Some algorithms have been decided upon to be used for generating _Taan_ for this _Raag_. Though, these algorithms will have to be improved to improve the performance and basically has to move toward solving the problem, "What capacities enable human beings to generate _Taan_ for a given _Raag_ ?".
 
 ---
 ## How to use it ?
-Now, this is a maven project. So to use this project one has to have a maven build environment installed in the system. Now if that is present 
-- download the project, create a file in the src/test/raag_files folder with .raag extension and enter the necessary code (there are examples in the folder, much more of what one has to know about the syntax of the scripting language is given below). 
-- Then copy the relative path of the file and put it as the parameter of the Launcher.play function call in the Play.java file of src/main/java folder. 
-- Then run the application to see the performance for yourself.
-
+You will have to have java (jdk 1.8) installed in your machine. If you have this, download the release - SoundCheck.jar. Then go into the folder where you have saved the SoundCheck.jar file and open a .raag file, enter the raag (alternatively you can also copy from some of the examples you will find in the 'src/test/raag_files'), the go into the command prompt and run the following command.
+```
+java -jar SoundCheck.jar "<fileName>"
+```
 ---
 ## Some terms to look at
 ### Raag
-It is hard to explain what a raag is. Exponents of the Indian classical music tradition have been unanimously of this opinion. Now I here will try to define the subject as interpreted in this project. Here the _Raag_ is interpreted as a hierarchical recursive syntactic structure with musical notes as terminals. A _Raag_ in my view is an infinite set of distinct sequences of notes. And the only way to capture and represent an infinite set of sequences is to have a generative structure. So a _Raag_ here is essentially a generative structure.
+It is hard to explain what a raag is. Exponents of the Indian classical music tradition have been unanimously of this opinion. Now I here will try to define the subject as interpreted in this project. Here the _Raag_ is interpreted as a recursive syntactic structure with musical notes as terminals. A _Raag_ in my view is an infinite set of distinct sequences of notes. And the only way to capture and represent an infinite set of sequences is to have a generative structure. So a _Raag_ here is essentially a generative structure.
 
 ### Taan
 A _Taan_ is basically a sequence of notes sampled from a _Raag_ and distributed over a given bit scheme or _Taal_.
@@ -27,7 +28,7 @@ Now, given the _Arohan_ and _Avarohan_ of a particular _Raag_, we can declare nu
 
 ---
 ## Describing the scripting language
-Now let's take a more intricate look into the first objective of the project. Now hierarchically speaking a .raag file should have three components. **Declarations**, An optional **Scheme Block**, an optional **Rule Space**.
+Now let's take a more intricate look into the first objective of the project. Now hierarchically speaking a .raag file should have three components. **Declarations**, An optional **Scheme Block**, a mandatory **Rule Space**.
 
 ### Declarations
 The declarations are a set of parameters that are mentioned to describe some features associated with processing the _Raag_(syntax) and the subsequent operations related to generation of _Taan_(sequence or notes). This component constitute the header of a .raag file. Some declarations are obligatory and others are optional.
