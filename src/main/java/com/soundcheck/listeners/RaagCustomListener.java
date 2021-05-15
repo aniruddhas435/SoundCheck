@@ -145,7 +145,11 @@ public class RaagCustomListener extends RaagBaseListener {
 
     @Override
     public void exitProbability(RaagParser.ProbabilityContext ctx) {
-        currProbability = Double.parseDouble(ctx.getText());
+        try {
+            currProbability = Double.parseDouble(ctx.getText());
+        } catch(NumberFormatException e) {
+            ErrorHandler.hasErrorOccured = true;
+        }
     }
 
     @Override
