@@ -7,11 +7,11 @@ import java.io.IOException;
 public class TestSyntaxBuilder {
     public static void main(String[] args) throws IOException {
         ReadFile reader = new ReadFile();
-        ErrorHandler.callFromClient = true;
+        ErrorHandler.isCallFromClient();
         String content = reader.readFile(
                 "C:\\Users\\Aniruddha Sarkar\\Documents\\github\\SoundCheck\\src\\test\\raag_files\\error_files_test\\mkm\\mkm1.raag"
         );
         Object[] objects = new Parser().parse(content);
-        System.out.println(ErrorHandler.hasErrorOccured);
+        System.out.println(ErrorHandler.hasErrorOccurred());
     }
 }

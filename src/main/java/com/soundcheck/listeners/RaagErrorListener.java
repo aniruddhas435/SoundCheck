@@ -9,12 +9,15 @@ public class RaagErrorListener extends ConsoleErrorListener {
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line,
                             int charPositionInLine, String msg, RecognitionException e) {
 //        line -= 2;
-        if(!ErrorHandler.callFromClient) {
+        if(!ErrorHandler.isCallFromClient()) {
             System.err.println("line " + line + ":" + " " + msg);
             System.exit(-1);
         } else {
-            ErrorHandler.messages += "line " + line + ":" + " " + msg + "\n";
-            ErrorHandler.hasErrorOccured = true;
+            ErrorHandler.setMessages(
+                    ErrorHandler.getMessages()
+                    + "line " + line + ":" + " " + msg + "\n"
+            );
+            ErrorHandler.setErrorOccurred(true);
         }
     }
 }

@@ -35,7 +35,7 @@ public class SyntaxBuilder {
 
     public Object[] buildSyntax(String content, String filePath) throws IOException {
         Object[] parsed =  parser.parse(content);
-        if(ErrorHandler.hasErrorOccured) {
+        if(ErrorHandler.hasErrorOccurred()) {
             return new Object[]{};
         }
 
@@ -55,9 +55,12 @@ public class SyntaxBuilder {
 
         if(!derivations.containsKey(start)) {
             String errMsg = "mentioned start symbol - \"start: " + start + "\" does not have a rule";
-            if(ErrorHandler.callFromClient) {
-                ErrorHandler.hasErrorOccured = true;
-                ErrorHandler.messages += "\n" + errMsg;
+            if(ErrorHandler.isCallFromClient()) {
+                ErrorHandler.setErrorOccurred(true);
+                ErrorHandler.setMessages(
+                    ErrorHandler.getMessages()
+                    + "\n" + errMsg
+                );
                 return new Object[]{};
             } else {
                 System.err.println(errMsg);
@@ -71,14 +74,14 @@ public class SyntaxBuilder {
         System.out.println(Parser.getStringForSyntax(syntax.getDerivations(), start));
         System.out.println("=======================================================================================================");
 
-        if(ErrorHandler.hasErrorOccured) {
+        if(ErrorHandler.hasErrorOccurred()) {
             return new Object[]{};
         }
 
         if(filePath != null) registerSyntax.register(syntax, declarations, outFileName, filePath);
         checkSyntax.check(content, derivations);
 
-        if(ErrorHandler.hasErrorOccured) {
+        if(ErrorHandler.hasErrorOccurred()) {
             return new Object[]{};
         }
 

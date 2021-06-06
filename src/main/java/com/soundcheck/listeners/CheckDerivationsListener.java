@@ -35,12 +35,15 @@ public class CheckDerivationsListener extends RaagBaseListener {
             int charPos = token.getCharPositionInLine();
             String msg = "variable " + ctx.getText() + " has no derivation";
 
-            if(!ErrorHandler.callFromClient) {
+            if(!ErrorHandler.isCallFromClient()) {
                 System.err.println("line " + line + ":" + charPos + " " + msg);
                 System.exit(-1);
             } else {
-                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
-                ErrorHandler.hasErrorOccured = true;
+                ErrorHandler.setMessages(
+                        ErrorHandler.getMessages()
+                        + "line " + line + ":" + charPos + " " + msg + "\n"
+                );
+                ErrorHandler.setErrorOccurred(true);
             }
         }
     }

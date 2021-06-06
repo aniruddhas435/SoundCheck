@@ -91,8 +91,8 @@ public class RaagCustomListener extends RaagBaseListener {
         try {
             declarations.setMsec(Integer.parseInt(ctx.getText()));
         } catch(NumberFormatException e) {
-            if(ErrorHandler.callFromClient) {
-                ErrorHandler.hasErrorOccured = true;
+            if(ErrorHandler.isCallFromClient()) {
+                ErrorHandler.setErrorOccurred(true);
             }
         }
     }
@@ -148,7 +148,7 @@ public class RaagCustomListener extends RaagBaseListener {
         try {
             currProbability = Double.parseDouble(ctx.getText());
         } catch(NumberFormatException e) {
-            ErrorHandler.hasErrorOccured = true;
+            ErrorHandler.setErrorOccurred(true);
         }
     }
 
@@ -219,22 +219,28 @@ public class RaagCustomListener extends RaagBaseListener {
         String msg = "palta "  + schemeNameCalled + " is referenced before declaration";
 
         if(schemes != null && !schemes.containsKey(schemeNameCalled)) {
-            if(!ErrorHandler.callFromClient) {
+            if(!ErrorHandler.isCallFromClient()) {
                 System.err.println("line " + line + ":" + charPos + " " + msg);
                 System.exit(-1);
             } else {
-                ErrorHandler.hasErrorOccured = true;
-                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
+                ErrorHandler.setErrorOccurred(true);
+                ErrorHandler.setMessages(
+                    ErrorHandler.getMessages()
+                    + "line " + line + ":" + charPos + " " + msg + "\n"
+                );
             }
         }
 
         if(schemes == null) {
-            if(!ErrorHandler.callFromClient) {
+            if(!ErrorHandler.isCallFromClient()) {
                 System.err.println("line " + line + ":" + charPos + " " + msg);
                 System.exit(-1);
             } else {
-                ErrorHandler.hasErrorOccured = true;
-                ErrorHandler.messages += "line " + line + ":" + charPos + " " + msg + "\n";
+                ErrorHandler.setErrorOccurred(true);
+                ErrorHandler.setMessages(
+                        ErrorHandler.getMessages()
+                                + "line " + line + ":" + charPos + " " + msg + "\n"
+                );
             }
         }
     }
